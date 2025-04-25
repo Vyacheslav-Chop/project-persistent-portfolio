@@ -58,10 +58,10 @@ body.theme-dark .toggle-theme-btn-circle::before {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 2px;
+  top: 0;
   background-color: #292929;
   border-radius: 50%;
-  right: 12px;
+  right: 8px;
   z-index: 10;
 }
 
