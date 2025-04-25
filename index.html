@@ -9,14 +9,16 @@
     <script type="module" crossorigin src="/project-persistent-portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/project-persistent-portfolio/assets/vendor-DRBp52o7.js">
     <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/vendor-BfPs2Zf6.css">
-    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/index-HuZ7ySvi.css">
+    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/index-BtgqNNVg.css">
   </head>
   <body class="theme-light">
     <section class="header-section">
   <div class="container header-container">
     <div class="header-top-wrapper">
       <a class="site-logo" href="../index.html">
-        <p class="text-logo">Lloyd<span class="text-accent">Jefferson.</span></p>
+        <p class="text-logo">
+          Lloyd<span class="text-accent">Jefferson.</span>
+        </p>
       </a>
       <button class="toggle-theme-btn" aria-label="Switch theme">
         <span class="toggle-theme-btn-circle"></span>
@@ -24,33 +26,96 @@
     </div>
 
     <div class="header-nav-wrapper">
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#about-me">About me</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#projects">Projects</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#contacts">Contacts</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
-      <a class="header-order-link" href="#work-togethe">Order the project</a>
+      <a class="order-link" href="#work-togethe">Order the project</a>
       <button class="burger-menu-btn" aria-label="Open menu" type="button">
         <svg class="burger-menu-btn-icon" width="32" height="32">
           <use href="../img/sprite-svg/icons.svg#burger"></use>
         </svg>
       </button>
     </div>
+    <div class="menu is-close">
+  <div class="menu-wrapper">
+    <div class="menu-header-content">
+      <a class="site-logo" href="./index.html">
+        <p class="text-logo">Lloyd<span class="text-accent">Jefferson.</span></p>
+      </a>
+      <button class="menu-close-btn" type="button" aria-label="Close menu" tabindex="0">
+      <svg class="menu-close-btn-icon" width="32" height="32">
+        <use href="../img/sprite-svg/icons.svg#menu-close-icon"></use>
+      </svg>
+        </button>
+    </div>
+    <nav class="menu-nav">
+      <ul class="menu-nav-list">
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="#about-me">About me</a>
+        </li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="menu-order-link" href="#work-togethe" data-link-order="">Order the project</a>
+  </div>
+  <ul class="social-list menu-social-list">
+    <li class="social-item">
+      <a
+        class="social-link"
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+        >Instagram</a
+      >
+    </li>
+    <li class="social-item">
+      <a
+        class="social-link"
+        href="https://www.facebook.com/goITclub/"
+        target="_blank"
+        >Facebook</a
+      >
+    </li>
+    <li class="social-item">
+      <a
+        class="social-link"
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+        target="_blank"
+        >Linkedin</a
+      >
+    </li>
+    <li class="social-item">
+      <a
+        class="social-link"
+        href="https://github.com/Vyacheslav-Chop/project-persistent-portfolio"
+        target="_blank"
+        >GitHub</a
+      >
+    </li>
+  </ul>
+</div>
+
   </div>
 </section>
 
 
     <main>
      
-      
+      <!-- 
       <section class="section">
     <div>
         <h2 class="abot-me-main-title">About <span>me</span></h2>
@@ -65,10 +130,19 @@
         </div>
 
     <picture> 
-        <source media="(min-widht: 1280px)" srcset="/project-persistent-portfolio/assets/about-me-desktop-CYFxE3VD.avif 1x, /project-persistent-portfolio/assets/about-me-desktop@2x-C0pQFJiN.avif 2x" />
-        <source media="(min-widht: 768px)" srcset="/project-persistent-portfolio/assets/about-me-tablet-NmaD7shP.avif 1x, /project-persistent-portfolio/assets/about-me-tablet@2x-BEVR0ndR.avif 2x" />
-        <source media="(max-widht: 767px)" srcset="/project-persistent-portfolio/assets/about-me-mobile-yx35cZ3H.avif 1x, /project-persistent-portfolio/assets/about-me-mobile@2x-hzqY2S_w.avif 2x" />
-        <img class="about-me-img" src="/project-persistent-portfolio/assets/about-me-desktop-CYFxE3VD.avif" />
+        <source media="(min-widht: 1280px)" srcset="
+                            /img/about-me/imgs/about-me-desktop.avif 1x,
+                            /img/about-me/imgs/about-me-desktop@2x.avif 2x,
+                            " />
+        <source media="(min-widht: 768px)" srcset="
+                            /img/about-me/imgs/about-me-tablet.avif 1x,
+                            /img/about-me/imgs/about-me-tablet@2x.avif 2x,
+                            " />
+        <source media="(max-widht: 767px)" srcset="
+                            /img/about-me/imgs/about-me-mobile.avif 1x,
+                            /img/about-me/imgs/about-me-mobile@2x.avif 2x,
+                            " />
+        <img class="about-me-img" src="/img/about-me/imgs/about-me-desktop.avif" />
     </picture>
 
         <div class="abot-me-education-wrapper">
@@ -210,50 +284,54 @@
 </section>
 
       
-      
+       -->
       
     </main>
 
     <footer class="sectio-footer">
   <div class="container footer-container">
     <div class="footer-social-wrapper">
-      <a class="site-logo footer-logo" href="../index.html">
+      <a class="site-logo footer-logo" href="./index.html">
         <p class="text-logo footer-text-logo">
           Lloyd<span class="text-accent">Jefferson.</span>
         </p>
       </a>
-      <ul class="footer-social-list">
+      <ul class="social-list">
         <li class="footer-social-item">
           <a
-            class="footer-social-link"
+            class="social-link"
             href="https://www.instagram.com/goitclub/"
+            target="_blank"
             >Instagram</a
           >
         </li>
-        <li class="footer-social-item">
+        <li class="social-item">
           <a
-            class="footer-social-link"
+            class="social-link"
             href="https://www.facebook.com/goITclub/"
+            target="_blank"
             >Facebook</a
           >
         </li>
-        <li class="footer-social-item">
+        <li class="social-item">
           <a
-            class="footer-social-link"
+            class="social-link"
             href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank"
             >Linkedin</a
           >
         </li>
-        <li class="footer-social-item">
+        <li class="social-item">
           <a
-            class="footer-social-link"
+            class="social-link"
             href="https://github.com/Vyacheslav-Chop/project-persistent-portfolio"
+            target="_blank"
             >GitHub</a
           >
         </li>
       </ul>
     </div>
-    <p class="footer-copy-text">
+    <p class="copy-text">
       &copy; Copyright 2024. Made by LloydJefferson
     </p>
   </div>
