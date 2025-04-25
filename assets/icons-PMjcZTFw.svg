@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="burger" viewBox="0 0 32 32">
+      <path d="M5.334 23.027v-1.333h21.333v1.333H5.334zm0-6.36v-1.333h21.333v1.333H5.334zm0-6.36V8.974h21.333v1.333H5.334z"/>
+    </symbol>
+    <symbol id="chevron-up" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-width="2.667" d="m24 20-8-8-8 8"/>
+    </symbol>
+     <symbol id="menu-close-icon" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 8 8 24M8 8l16 16"/>
+    </symbol>
+  </defs>
+</svg>
