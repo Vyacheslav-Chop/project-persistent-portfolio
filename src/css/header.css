@@ -120,11 +120,11 @@ body.theme-dark .burger-menu-btn-icon:focus {
   transform: scale(1.05);
 }
 
-.header-nav {
+.nav {
   display: none;
 }
 
-.header-order-link {
+.order-link {
   display: none;
 }
 
@@ -143,7 +143,7 @@ body.theme-dark .burger-menu-btn-icon:focus {
     gap: 40px;
   }
 
-  .header-order-link {
+  .order-link {
     display: block;
     padding: 12px 24px;
     font-weight: 500;
@@ -154,22 +154,22 @@ body.theme-dark .burger-menu-btn-icon:focus {
     transition: all 0.3s ease;
   }
 
-  body.theme-light .header-order-link {
+  body.theme-light .order-link {
     background-color: #00b068;
   }
 
-  body.theme-dark .header-order-link {
+  body.theme-dark .order-link {
     background-color: #14c57c;
   }
 
-  body.theme-light .header-order-link:hover,
-  body.theme-light .header-order-link:focus {
+  body.theme-light .order-link:hover,
+  body.theme-light .order-link:focus {
     background-color: #009156;
     transform: scale(1.05);
   }
 
-  body.theme-dark .header-order-link:hover,
-  body.theme-dark .header-order-link:focus {
+  body.theme-dark .order-link:hover,
+  body.theme-dark .order-link:focus {
     background-color: #009156;
     transform: scale(1.05);
   }
@@ -180,17 +180,17 @@ body.theme-dark .burger-menu-btn-icon:focus {
     display: none;
   }
 
-  .header-nav {
+  .nav {
     display: flex;
   }
 
-  .header-nav-list {
+  .nav-list {
     display: flex;
     align-items: center;
     gap: 40px;
   }
 
-  .header-nav-link {
+  .nav-link {
     display: block;
     font-weight: 300;
     letter-spacing: 0.03em;
@@ -198,14 +198,14 @@ body.theme-dark .burger-menu-btn-icon:focus {
     transition: color 0.3s ease, transform 0.3s ease;
   }
 
-  body.theme-light .header-nav-link:hover,
-  body.theme-light .header-nav-link:focus {
+  body.theme-light .nav-link:hover,
+  body.theme-light .nav-link:focus {
     color: #00b068;
     transform: scale(1.05);
   }
 
-  body.theme-dark .header-nav-link:hover,
-  body.theme-dark .header-nav-link:hover {
+  body.theme-dark .nav-link:hover,
+  body.theme-dark .nav-link:hover {
     color: #14c57c;
     transform: scale(1.05);
   }
