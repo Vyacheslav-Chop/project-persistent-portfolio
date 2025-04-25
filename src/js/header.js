@@ -1,6 +1,4 @@
 // основна логіка роботи секції
-import { handleChangeTheme } from './handlers';
-import { refs } from './refs';
-const { themeToggleButton } = refs;
+import { applySavedTheme } from "./themes";
 
-themeToggleButton.addEventListener('click', handleChangeTheme);
+applySavedTheme();
