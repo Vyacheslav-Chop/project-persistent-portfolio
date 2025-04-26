@@ -26,9 +26,15 @@
   content: '';
   width: 100%;
   height: 1px;
-  background-color: #f0f0f0;
   bottom: 0;
   right: 0;
+}
+body.theme-light .faq-item::after {
+  background-color: #e4e5e6;
+}
+
+body.theme-dark .faq-item::after {
+  background-color: #e4e5e6;
 }
 body.theme-light .faq-item:hover,
 body.theme-light .faq-item:focus {
@@ -94,7 +100,6 @@ body.theme-light .faq-arrow-btn-icon {
     line-height: 1.15;
     letter-spacing: 0.02em;
     margin-bottom: 90px;
-    max-width: 520px;
   }
   .faq-question {
     font-size: 20px;
@@ -114,6 +119,9 @@ body.theme-light .faq-arrow-btn-icon {
     align-items: flex-start;
   }
 
+  .faq-title {
+    max-width: 520px;
+  }
   .faq-list {
     position: absolute;
     bottom: 0;
@@ -123,11 +131,13 @@ body.theme-light .faq-arrow-btn-icon {
   }
   /* Фонове зображення */
   .faq-background {
-    display: list-item;
+    display: flex;
     background-image: url('/img/faq/green-decor-desktop.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-width: 526px;
+    min-height: 408px;
   }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
