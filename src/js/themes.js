@@ -2,7 +2,7 @@
  import { handleChangeTheme } from './handlers';
 import { refs } from './refs';
 const { themeToggleButton, body } = refs;
-import { loadThemeFromLocalStorage } from './storage';
+import { loadThemeFromLocalStorage, loadThemeTextFromLocalStorage } from './storage';
 
 themeToggleButton.addEventListener('click', handleChangeTheme);
 
@@ -14,4 +14,10 @@ export function applySavedTheme() {
   } else {
     body.classList.add('theme-light');
   }
+}
+
+export function applySavedThemeText() {
+  const savedThemeText = loadThemeTextFromLocalStorage();
+  if (!savedThemeText) return;
+  body.classList.add(savedThemeText);
 }
