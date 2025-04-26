@@ -1,6 +1,16 @@
 // основна логіка роботи секції
-import { handleChangeTheme } from './handlers';
+import { applySavedTheme, applySavedThemeText } from './themes';
 import { refs } from './refs';
-const { themeToggleButton } = refs;
+const { openModalMenuBtn } = refs;
+import { handleOpenMenu, handleChangeThemeText } from './handlers';
 
-themeToggleButton.addEventListener('click', handleChangeTheme);
+document.addEventListener('DOMContentLoaded', () => {
+  const switchers = document.querySelectorAll('.theme-switcher.container');
+  switchers.forEach(switcher => {
+    switcher.addEventListener('click', handleChangeThemeText);
+  });
+});
+
+applySavedTheme();
+applySavedThemeText();
+openModalMenuBtn.addEventListener('click', handleOpenMenu);
