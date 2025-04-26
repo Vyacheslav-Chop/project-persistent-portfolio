@@ -54,13 +54,6 @@ export function handleOpenMenu() {
 
 export function handleChangeThemeText(ev) {
   const clickedBtn = ev.target.closest('button[data-theme]');
-  console.log(clickedBtn);
-
-  const allThemeTextBoxes = document.querySelectorAll(
-    '.theme-switcher.container'
-  );
-  console.log(allThemeTextBoxes); // подивишся, скільки їх і які
-
   if (!clickedBtn) return;
 
   body.classList.remove(
