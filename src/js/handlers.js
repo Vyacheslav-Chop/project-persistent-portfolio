@@ -5,7 +5,6 @@ const { body, openModalMenuBtn } = refs;
 import { closeModalMenu, openModalMenu } from './modal';
 import { STORAGE_KEYS } from './constants';
 const { theme, themeText } = STORAGE_KEYS;
-import { disactivBtn } from './helpers';
 
 // перемикання тем
 export function handleChangeTheme() {
@@ -54,11 +53,15 @@ export function handleOpenMenu() {
 }
 
 export function handleChangeThemeText(ev) {
-
   const clickedBtn = ev.target.closest('button[data-theme]');
-  if (!clickedBtn) return;
+  console.log(clickedBtn);
 
-  // clickedBtn.classList.remove('is-disactiv');
+  const allThemeTextBoxes = document.querySelectorAll(
+    '.theme-switcher.container'
+  );
+  console.log(allThemeTextBoxes); // подивишся, скільки їх і які
+
+  if (!clickedBtn) return;
 
   body.classList.remove(
     'text-theme-blue',
@@ -71,9 +74,6 @@ export function handleChangeThemeText(ev) {
     saveThemeToLocalStorage(themeText, '');
   } else {
     body.classList.add(`text-theme-${theme}`);
-    saveThemeToLocalStorage(themeText, `text-theme-${theme}`)
+    saveThemeToLocalStorage(themeText, `text-theme-${theme}`);
   }
-  
-  // clickedBtn.classList.add('is-disactiv');
-
 }
