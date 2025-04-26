@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/project-persistent-portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/project-persistent-portfolio/assets/vendor-DRBp52o7.js">
     <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/vendor-BfPs2Zf6.css">
-    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/index-BeDTI5Lo.css">
+    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/index-ddUGEAFU.css">
   </head>
   <body class="theme-light">
     <section class="header-section">
@@ -42,7 +42,7 @@
       <a class="order-link" href="#work-togethe">Order the project</a>
       <button class="burger-menu-btn" aria-label="Open menu" type="button">
         <svg class="burger-menu-btn-icon" width="32" height="32">
-          <use href="/project-persistent-portfolio/assets/icons-PMjcZTFw.svg#burger"></use>
+          <use href="/project-persistent-portfolio/assets/icons-BNLyrJ9A.svg#burger"></use>
         </svg>
       </button>
     </div>
@@ -64,7 +64,7 @@
         tabindex="0"
       >
         <svg class="menu-close-btn-icon" width="32" height="32">
-          <use href="/project-persistent-portfolio/assets/icons-PMjcZTFw.svg#menu-close-icon"></use>
+          <use href="/project-persistent-portfolio/assets/icons-BNLyrJ9A.svg#menu-close-icon"></use>
         </svg>
       </button>
     </div>
@@ -136,42 +136,57 @@
       
       <section class="section">
     <div>
-        <h2 class="abot-me-main-title">About <span>me</span></h2>
+        <h2 class="abot-me-main-title">About <span class="text-accent">me</span></h2>
+        
+        <picture> 
+            <source media="(min-widht: 1280px)" srcset="/project-persistent-portfolio/assets/about-me-desktop-CYFxE3VD.avif 1x, /project-persistent-portfolio/assets/about-me-desktop@2x-C0pQFJiN.avif 2x" />
+            <source media="(min-widht: 768px)" srcset="/project-persistent-portfolio/assets/about-me-tablet-NmaD7shP.avif 1x, /project-persistent-portfolio/assets/about-me-tablet@2x-BEVR0ndR.avif 2x" />
+            <source media="(max-widht: 767px)" srcset="/project-persistent-portfolio/assets/about-me-mobile-yx35cZ3H.avif 1x, /project-persistent-portfolio/assets/about-me-mobile@2x-hzqY2S_w.avif 2x" />
+            <img class="about-me-img" src="/project-persistent-portfolio/assets/about-me-desktop-CYFxE3VD.avif" />
+        </picture>
+
         <div class="about-me-bio-wrapper">
             <h3 class="about-me-title">BIO</h3>
-                <p class="about-me-text">
+                <div class="about-me-bio-text">
+                    <p class="about-me-text">
             I'm Lloyd Jefferson, a talented programmer specializing in software development. My expertise spans various programming languages and technologies, and I am dedicated to continually enhancing my skills. I thrive on seeking unconventional and creative solutions to problems, leveraging a high level of analytical skills to effectively tackle even the most challenging tasks.
                 </p>
+                </div>
                 <p class="about-me-text">
             Adaptable to both independent and team-oriented work, I collaborate seamlessly with colleagues, exchanging ideas and finding optimal solutions. My professional maturity enables me to navigate challenges and stressful situations with a calm demeanor, maintaining a consistently high quality of work. Committed to self-improvement, I actively engage in studying new technologies and practices to stay current with the latest innovations in the field.
                 </p>
         </div>
 
-    <picture> 
-        <source media="(min-widht: 1280px)" srcset="/project-persistent-portfolio/assets/about-me-desktop-CYFxE3VD.avif 1x, /project-persistent-portfolio/assets/about-me-desktop@2x-C0pQFJiN.avif 2x" />
-        <source media="(min-widht: 768px)" srcset="/project-persistent-portfolio/assets/about-me-tablet-NmaD7shP.avif 1x, /project-persistent-portfolio/assets/about-me-tablet@2x-BEVR0ndR.avif 2x" />
-        <source media="(max-widht: 767px)" srcset="/project-persistent-portfolio/assets/about-me-mobile-yx35cZ3H.avif 1x, /project-persistent-portfolio/assets/about-me-mobile@2x-hzqY2S_w.avif 2x" />
-        <img class="about-me-img" src="/project-persistent-portfolio/assets/about-me-desktop-CYFxE3VD.avif" />
-    </picture>
-
         <div class="abot-me-education-wrapper">
             <h3 class="about-me-title">EDUCATION</h3>
-                <ul>
-                    <li class="about-me-text">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</li>
+                <ul class="about-me-list">
+                    <!-- <svg class="about-me-svg" width="4" height="4">
+                        <use href="/img/sprite-svg/icons.svg#icon-about-me"></use>
+                    </svg> -->
+                    <li class="about-me-text">
+                        <svg class="about-me-svg" width="4" height="4">
+                            <use href="/project-persistent-portfolio/assets/icons-BNLyrJ9A.svg#icon-about-me"></use>
+                        </svg>
+                        <!-- <img src="../img/sprite-svg/icons.svg#icon-about-me" alt="icon-about-me" class="about-me-svg" width="4" height="4"/> -->
+                        <!-- <a href="../img/sprite-svg/icons.svg#icon-about-me" class="about-me-svg" width="4" height="4"></a> -->
+                        2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York
+                    </li>
                     <li class="about-me-text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</li>
                     <li class="about-me-text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
                 </ul>
         </div>  
+
         <div class="about-me-role-wrapper">
             <h3 class="about-me-title">ROLE</h3>
-                <ul>
+                <ul class="about-me-list">
                     <li class="about-me-text">Frontend development</li>
                     <li class="about-me-text">HeadlessCMS, Wordpress</li>
                     <li class="about-me-text">Blender (enjoy)</li>
                 </ul>
         </div>
+
     </div>
-</section>
+</section> 
       
       
       
