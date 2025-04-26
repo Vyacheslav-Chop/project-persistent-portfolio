@@ -4,5 +4,4 @@ export const refs = {
   themeToggleButton: document.querySelector('.toggle-theme-btn'),
   openModalMenuBtn: document.querySelector('.burger-menu-btn'),
   modalMenu: document.querySelector('.menu'),
-  themeTextBox: document.querySelector('.theme-switcher'),
 };
