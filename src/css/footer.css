@@ -66,7 +66,7 @@ body.theme-dark .social-link:focus {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .sectio-footer {
     padding-top: 62px;
   }
@@ -84,7 +84,7 @@ body.theme-dark .social-link:focus {
   }
 }
 
-@media screen and (min-width: 1279.98px) {
+@media screen and (min-width: 1280px) {
   .sectio-footer {
     padding-top: 82px;
   }

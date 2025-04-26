@@ -128,7 +128,7 @@ body.theme-dark .burger-menu-btn-icon:focus {
   display: none;
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .header-section {
     padding: 24px 0;
   }
@@ -175,7 +175,7 @@ body.theme-dark .burger-menu-btn-icon:focus {
   }
 }
 
-@media screen and (min-width: 1279.98px) {
+@media screen and (min-width: 1280px) {
   .burger-menu-btn {
     display: none;
   }
