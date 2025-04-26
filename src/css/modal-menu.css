@@ -8,15 +8,15 @@
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
-  background-image: url('../img/modal-imgs/decor-mobile-menu.webp');
+  background-image: url('/img/modal-imgs/decor-mobile-menu.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 @media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
-  .advertisement-inner {
-    background-image: url('../img/modal-imgs/decor-mobile-menu@2x.webp');
+  .menu {
+    background-image: url('/img/modal-imgs/decor-mobile-menu@2x.webp');
   }
 }
 
@@ -164,7 +164,7 @@ body.theme-dark ul.social-list.menu-social-list {
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .menu {
-    background-image: url('../img/modal-imgs/decor-tablet-menu.webp');
+    background-image: url('/img/modal-imgs/decor-tablet-menu.webp');
   }
 
   ul.social-list.menu-social-list {
@@ -183,6 +183,6 @@ body.theme-dark ul.social-list.menu-social-list {
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 192dpi) {
   .menu {
-    background-image: url('../img/modal-imgs/decor-tablet-menu@2x.webp');
+    background-image: url('/img/modal-imgs/decor-tablet-menu@2x.webp');
   }
 }
