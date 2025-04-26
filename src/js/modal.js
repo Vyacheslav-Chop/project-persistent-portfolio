@@ -1,8 +1,5 @@
 //Описана робота модалки - відкриття закриття і все що з модалкою повʼязано
-import {
-  handleKeyDown,
-  handleModalClick,
-} from './handlers';
+import { handleKeyDown, handleModalClick } from './handlers';
 import { refs } from './refs';
 const { modalMenu } = refs;
 
