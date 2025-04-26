@@ -2,7 +2,9 @@
   <div class="container header-container">
     <div class="header-top-wrapper">
       <a class="site-logo" href="../index.html">
-        <p class="text-logo">Lloyd<span class="text-accent">Jefferson.</span></p>
+        <p class="text-logo">
+          Lloyd<span class="text-accent">Jefferson.</span>
+        </p>
       </a>
       <button class="toggle-theme-btn" aria-label="Switch theme">
         <span class="toggle-theme-btn-circle"></span>
@@ -10,25 +12,32 @@
     </div>
 
     <div class="header-nav-wrapper">
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#about-me">About me</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#projects">Projects</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#contacts">Contacts</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
-      <a class="header-order-link" href="#work-togethe">Order the project</a>
+      <a class="order-link" href="#work-togethe">Order the project</a>
       <button class="burger-menu-btn" aria-label="Open menu" type="button">
         <svg class="burger-menu-btn-icon" width="32" height="32">
-          <use href="../img/sprite-svg/icons.svg#burger"></use>
+          <use href="./img/sprite-svg/icons.svg#burger"></use>
         </svg>
       </button>
     </div>
+    <load src="/partials/modal-menu.html" />
+  </div>
+  <div class="theme-switcher container">
+    <button class="text-theme-btn text-theme-btn-defolt" data-theme="default" aria-label="Set default theme">D</button>
+    <button class="text-theme-btn text-theme-btn-blue" data-theme="blue" aria-label="Set blue theme">B</button>
+    <button class="text-theme-btn text-theme-btn-red" data-theme="red" aria-label="Set red theme">R</button>
+    <button class="text-theme-btn text-theme-btn-purple" data-theme="purple" aria-label="Set purple theme">P</button>
   </div>
 </section>
