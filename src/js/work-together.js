@@ -30,6 +30,8 @@ function onFormSubmit(event) {
     return;
   } else {
     emailError.classList.add('hidden');
+    // emailInput.classList.remove('error');
+    // emailInput.style.marginBottom = '32px';
   }
 
   const requestData = {
