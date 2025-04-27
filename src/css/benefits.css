@@ -8,28 +8,20 @@
   margin-bottom: 40px;
 }
 
-.benefits-span {
-  color: var(--Accet-green, #00b068);
-}
-
 .benefits-background-wrapper {
   display: none;
 }
 
 .benefits-list {
   display: flex;
-  width: 320px;
   flex-direction: column;
-  align-items: flex-end;
   gap: 32px;
 }
 
 .benefits-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 16px;
-  align-self: stretch;
   border-radius: 16px;
 }
 
@@ -37,19 +29,25 @@
   display: flex;
   width: 48px;
   height: 48px;
-  padding: 12px;
   justify-content: center;
   align-items: center;
-  background-color: #bcdfd1;
   border-radius: 8px;
+}
+
+body.theme-light .benefits-div-icon {
+  background-color: #bcdfd1;
+}
+
+body.theme-dark .benefits-div-icon {
+  background-color: #204136;
 }
 
 .benefits-icon {
   fill: none;
   stroke: #00b068;
 }
+
 .benefits-heading {
-  font-family: var(--font-main);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.56;
@@ -57,11 +55,9 @@
   text-transform: uppercase;
 }
 .benefits-text {
-  font-family: var(--font-main);
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 1.5;
   letter-spacing: 0.5px;
 }
 
@@ -77,12 +73,11 @@
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    min-width: 704px;
     flex-direction: row;
   }
 
   .benefits-item {
-    width: 336px;
+    flex-basis: calc((100% - 32px) / 2);
   }
 
   .benefits-item:first-child {
@@ -97,9 +92,21 @@
 /* Styles for Desktop devices */
 @media screen and (min-width: 1280px) {
   .benefits-container {
-    padding: 0 32px;
-    width: 1216px;
     position: relative;
+    padding: 0 32px;
+  }
+
+  .benefits-background-wrapper {
+    display: flex;
+    position: absolute;
+    background-image: url('/img/benefits/decor-03-benefits-bg-desktop.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 521px;
+    height: 382px;
+    right: 32px;
+    top: -116px;
   }
 
   .benefits-title {
@@ -107,31 +114,21 @@
     position: absolute;
   }
 
-  .benefits-background-wrapper {
-    display: inline-block;
-    position: absolute;
-    width: 521px;
-    height: 382px;
-    right: -32px;
-    top: -116px;
-  }
-
   .benefits-list {
-    width: 1216px;
     padding-top: 276px;
   }
 
   .benefits-item {
-    width: 384px;
+    flex-basis: calc((100% - 64px) / 3);
   }
 
   .benefits-item:first-child {
-    margin-left: 832px;
+    margin-left: calc((100% - 64px) / 3 * 2 + 64px);
   }
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .benefits-background-wrapper {
-    background-image: url('../img/benefits/decor-03-benefits-bg-desktop@2x.webp');
+    background-image: url('/img/benefits/decor-03-benefits-bg-desktop@2x.webp');
   }
 }
