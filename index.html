@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-Persistent-Portfolio</title>
     <script type="module" crossorigin src="/project-persistent-portfolio/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/project-persistent-portfolio/assets/vendor-DLQXGjV4.js">
-    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/vendor-DgtMbkff.css">
-    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/index-DLXV_pCW.css">
+    <link rel="modulepreload" crossorigin href="/project-persistent-portfolio/assets/vendor-DwJJ0CLa.js">
+    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/vendor-JyzU0S79.css">
+    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/index-D_64knJ8.css">
   </head>
   <body class="theme-light">
     <section class="header-section">
@@ -42,7 +42,7 @@
       <a class="order-link" href="#work-togethe">Order the project</a>
       <button class="burger-menu-btn" aria-label="Open menu" type="button">
         <svg class="burger-menu-btn-icon" width="32" height="32">
-          <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#burger"></use>
+          <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#burger"></use>
         </svg>
       </button>
     </div>
@@ -64,7 +64,7 @@
         tabindex="0"
       >
         <svg class="menu-close-btn-icon" width="32" height="32">
-          <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#menu-close-icon"></use>
+          <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#menu-close-icon"></use>
         </svg>
       </button>
     </div>
@@ -215,7 +215,7 @@
         <a class="hero-btn" href="#work-together">
           <div class="hero-btn-content">
             <svg class="hero-icon-arrow" width="28" height="16">
-              <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#icon-hero-arrow"></use>
+              <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#icon-hero-arrow"></use>
             </svg>
             <span class="hero-btn-text">Order the project</span>
           </div>
@@ -364,7 +364,7 @@
               type="button"
             >
               <svg class="faq-arrow-btn-icon" width="24" height="24">
-                <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#chevron-up"></use>
+                <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#chevron-up"></use>
               </svg>
             </button>
           </div>
@@ -386,7 +386,7 @@
               type="button"
             >
               <svg class="faq-arrow-btn-icon" width="24" height="24">
-                <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#chevron-up"></use>
+                <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#chevron-up"></use>
               </svg>
             </button>
           </div>
@@ -410,7 +410,7 @@
               type="button"
             >
               <svg class="faq-arrow-btn-icon" width="24" height="24">
-                <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#chevron-up"></use>
+                <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#chevron-up"></use>
               </svg>
             </button>
           </div>
@@ -432,7 +432,7 @@
               type="button"
             >
               <svg class="faq-arrow-btn-icon" width="24" height="24">
-                <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#chevron-up"></use>
+                <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#chevron-up"></use>
               </svg>
             </button>
           </div>
@@ -454,7 +454,7 @@
               type="button"
             >
               <svg class="faq-arrow-btn-icon" width="24" height="24">
-                <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#chevron-up"></use>
+                <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#chevron-up"></use>
               </svg>
             </button>
           </div>
@@ -481,7 +481,7 @@
               type="button"
             >
               <svg class="faq-arrow-btn-icon" width="24" height="24">
-                <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#chevron-up"></use>
+                <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#chevron-up"></use>
               </svg>
             </button>
           </div>
@@ -499,7 +499,47 @@
   </div>
 </section>
 
-      
+      <section class="section">
+    <div class="container container-review">
+        <h2 class="review-title">REVIEWS</h2>
+        <div class="swiper reviews-swiper">
+            <ul class="swiper-wrapper" id="reviews-list"></ul>
+        
+            <div class="swiper-nav">
+                <div class="swiper-button-prev" tabindex="0" aria-label="Previous slide">
+                    <svg class="button-icon-prev" width="40" height="40">
+                        <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#icon-arrow-right2"></use>
+                    </svg>
+                </div>
+                <div class="swiper-button-next" tabindex="0" aria-label="Previous slide">
+                    <svg class="button-icon" width="40" height="40">
+                        <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#icon-arrow-right2"></use>
+                    </svg>
+                </div>
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.reviews-swiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    keyboard: {
+                        enabled: true,
+                    },
+                    breakpoints: {
+                        1280: {
+                            slidesPerView: 2,
+                        },
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
+    </div>
+</section>
+
       <!-- Work together section -->
 <section class="section work-together-section">
   <div class="container">
@@ -517,7 +557,7 @@
             <li class="work-together-contacts-item">
               <div class="contact-link-container">
                 <svg class="contacts-icon" width="24" height="24">
-                  <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#icon"></use>
+                  <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#icon"></use>
                 </svg>
                 <a class="contact-link" href="tel:+380904567890"
                   >+38 090 456 78 90</a
@@ -527,7 +567,7 @@
             <li class="work-together-contacts-item">
               <div class="contact-link-container">
                 <svg class="contacts-icon" width="24" height="24">
-                  <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#icon-1"></use>
+                  <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#icon-1"></use>
                 </svg>
                 <a href="mailto:lloydjefferson@gmail.com"
                   >lloydjefferson@gmail.com</a
@@ -537,7 +577,7 @@
             <li class="work-together-contacts-item">
               <div class="contact-link-container">
                 <svg class="contacts-icon" width="24" height="24">
-                  <use href="/project-persistent-portfolio/assets/icons-XVFB06lf.svg#icon-2"></use>
+                  <use href="/project-persistent-portfolio/assets/icons-C1duG43D.svg#icon-2"></use>
                 </svg>
                 <a
                   href="https://www.google.com/maps/place/New+York,+USA"
