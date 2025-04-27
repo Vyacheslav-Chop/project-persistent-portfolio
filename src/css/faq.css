@@ -19,7 +19,6 @@
   transition: background 0.3s ease;
   padding: 28px 24px;
   position: relative;
-  width: 592px;
 }
 .faq-item::after {
   position: absolute;
@@ -128,6 +127,7 @@ body.theme-light .faq-arrow-btn-icon {
     right: 0;
     display: flex;
     flex-direction: column;
+    max-width: 592px;
   }
   /* Фонове зображення */
   .faq-background {
@@ -145,3 +145,6 @@ body.theme-light .faq-arrow-btn-icon {
     background-image: url('../img/faq/green-decor-desktop@2x.webp.webp');
   }
 }
+/* .ac .ac-trigger::after {
+  content: '';
+} */
