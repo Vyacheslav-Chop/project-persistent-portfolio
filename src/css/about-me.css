@@ -21,7 +21,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .about-me-title {
@@ -42,7 +41,7 @@
     margin-bottom: 24px;
 }
 
-.abot-me-education-wrapper {
+.about-me-education-wrapper {
     margin-bottom: 40px;
 }
 
@@ -51,12 +50,12 @@
     align-items: center;
     flex-direction: column;
     gap: 12px;
+    align-items: flex-start;
 }
 
 .about-me-item {
     padding-left: 32px;
     position: relative;
-    
 }
 
 .about-me-desc {
@@ -93,4 +92,106 @@
     height: 4px;
     border-radius: 1px;
     background-color: #00B068;
+}
+
+.about-me-bg {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-main-title { 
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;        
+    }
+
+    .about-me-picture-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    .about-me-img {
+        padding-top: 408px;
+        padding-bottom: 60px;
+    }
+
+    .about-me-bio-wrapper {
+        display: block;
+        max-width: 336px ; 
+        margin: 0 auto;
+    }
+    
+    .about-me-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        position: relative;
+    }
+
+    .about-me-bg {
+        background-image: url('/img/about-me/bg-imgs/decor-bg-2-tablet.webp');
+        display: flex;
+        position: absolute;
+        width: 336px;
+        height: 252px;
+        right: 0;
+        top: -126px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .item-wrapper {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+
+    .about-me-title {   
+        font-size: 36px;
+        line-height: 1.33;
+        letter-spacing: 0.01em;    
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 192dpi) {
+    .about-me-bg {
+        background-image: url('/img/about-me/bg-imgs/decor-bg-2-tablet@2x.webp');
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-me-main-title {      
+        letter-spacing: 0.03em;
+    }
+
+    .about-me-picture-wrapper {
+        gap: 136px;
+    }
+
+    .about-me-img {
+        padding-top: 312px;
+        padding-bottom: 80px;
+    }
+
+    .item-wrapper {
+        flex-basis: calc((100% - 136px) / 2);
+    }
+
+    .about-me-bg {
+        background-image: url('/img/about-me/bg-imgs/decor-bg-2-desktop.webp');
+        max-width: 384px;
+        height: 288px;
+        top: -368px;
+    }
+    
+    .about-me-bio-wrapper {
+        max-width: 488px; 
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    .about-me-bg {
+        background-image: url('/img/about-me/bg-imgs/decor-bg-2-desktop@2x.webp');    
+    }
 }
