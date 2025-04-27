@@ -11,6 +11,10 @@
     </symbol>
      <symbol id="menu-close-icon" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 8 8 24M8 8l16 16"/>
+
+    </symbol>
+       <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+      <path d="M9 18c.278 0 .555.116.753.341L16 25.481l6.247-7.14a1 1 0 1 1 1.505 1.317l-7 8a1 1 0 0 1-1.506 0l-7-8A1 1 0 0 1 8.998 18z"/>
     </symbol>
   </defs>
 </svg>
