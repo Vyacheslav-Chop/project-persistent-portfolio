@@ -1,4 +1,6 @@
 //Допоміжні функції
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 function removeFocusFromElements() {
   const interactiveElements = document.querySelectorAll('a, button');
@@ -25,5 +27,24 @@ function smoothScroll(ev) {
 export function scrollToView() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', smoothScroll);
+  });
+}
+
+export function showErrorMessage(message) {
+  iziToast.error({
+    message,
+    position: 'bottomRight',
+    backgroundColor: '#ef4040',
+    messageColor: '#ffffff',
+    maxWidth: '400',
+  });
+}
+
+export function showInfoMessage(message) {
+  iziToast.info({
+    message,
+    position: 'center',
+    maxWidth: '400',
+    timeout: 1500,
   });
 }

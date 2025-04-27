@@ -3,6 +3,7 @@ import { applySavedTheme, applySavedThemeText } from './themes';
 import { refs } from './refs';
 const { openModalMenuBtn } = refs;
 import { handleOpenMenu, handleChangeThemeText } from './handlers';
+import { scrollToView, removeFocus } from './helpers';
 
 document.addEventListener('DOMContentLoaded', () => {
   const switchers = document.querySelectorAll('.theme-switcher');
@@ -14,3 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
 applySavedTheme();
 applySavedThemeText();
 openModalMenuBtn.addEventListener('click', handleOpenMenu);
+scrollToView();
+removeFocus();
