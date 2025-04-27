@@ -5,7 +5,6 @@ const { body, openModalMenuBtn } = refs;
 import { closeModalMenu, openModalMenu } from './modal';
 import { STORAGE_KEYS } from './constants';
 const { theme, themeText } = STORAGE_KEYS;
-import { disactivBtn } from './helpers';
 
 // перемикання тем
 export function handleChangeTheme() {
@@ -54,11 +53,8 @@ export function handleOpenMenu() {
 }
 
 export function handleChangeThemeText(ev) {
-
   const clickedBtn = ev.target.closest('button[data-theme]');
   if (!clickedBtn) return;
-
-  // clickedBtn.classList.remove('is-disactiv');
 
   body.classList.remove(
     'text-theme-blue',
@@ -71,9 +67,6 @@ export function handleChangeThemeText(ev) {
     saveThemeToLocalStorage(themeText, '');
   } else {
     body.classList.add(`text-theme-${theme}`);
-    saveThemeToLocalStorage(themeText, `text-theme-${theme}`)
+    saveThemeToLocalStorage(themeText, `text-theme-${theme}`);
   }
-  
-  // clickedBtn.classList.add('is-disactiv');
-
 }

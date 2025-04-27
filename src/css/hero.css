@@ -1,0 +1,234 @@
+/* Styles for Mobile devices */
+
+.section-hero {
+  padding-top: 0;
+}
+
+.hero-top-box {
+  background-image: url(/img/hero/bg-hero/bg-hero-mobile.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 96px;
+  padding-bottom: 56px;
+  margin-bottom: 16px;
+}
+@media screen and (min-resolution: 192dpi) {
+  .menu {
+    background-image: url(/img/hero/bg-hero/bg-hero-mobile@2x.webp);
+  }
+}
+.hero-title-box {
+  margin-bottom: 40px;
+}
+.main-title {
+  font-family: var(--font-helpers);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.hero-title-img {
+  display: none;
+}
+
+.hero-btn {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  height: 92px;
+  margin-bottom: 40px;
+}
+.hero-btn-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.hero-btn-text {
+  margin-left: 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.hero-btn-bg {
+  position: absolute;
+
+  left: 49%;
+
+  display: inline-block;
+  border-radius: 16px;
+  width: 165px;
+  height: 92px;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+.theme-light .hero-btn-bg {
+  background-color: #bcdfd1;
+}
+.theme-light .hero-btn:hover .hero-btn-bg,
+.hero-btn:focus .hero-btn-bg {
+  background-color: #00b068;
+}
+
+.theme-dark .hero-btn-bg {
+  background-color: #009156;
+}
+.theme-dark .hero-btn:hover .hero-btn-bg,
+.hero-btn:focus .hero-btn-bg {
+  background-color: #14c57c;
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.theme-light .hero-social-list {
+  background-color: #e4e5e6;
+}
+.theme-dark .hero-social-list {
+  background-color: #2a2d32;
+}
+
+.hero-social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  padding: 32px 0px;
+  width: 100%;
+  height: 232px;
+}
+.hero-social-item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+.hero-social-link {
+  transition: color 0.3s ease;
+}
+.theme-light .hero-social-link:hover,
+.hero-social-link:focus {
+  color: #00b068;
+}
+.theme-dark .hero-social-link:hover,
+.hero-social-link:focus {
+  color: #14c57c;
+}
+
+/* Styles for Tablet devices */
+
+@media screen and (min-width: 768px) {
+  .hero-top-box {
+    background-image: url(/img/hero/bg-hero/bg-hero-tablet.webp);
+    padding-top: 72px;
+    padding-bottom: 64px;
+  }
+  .hero-title-box {
+    margin-bottom: 60px;
+  }
+  .main-title {
+    font-size: 136px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+  }
+
+  .hero-btn {
+    width: 416px;
+    height: 96px;
+  }
+
+  .hero-btn-text {
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .hero-btn-bg {
+    left: 37.5%;
+    width: 261px;
+    height: 96px;
+  }
+  .hero-text {
+    font-size: 20px;
+    line-height: 160%;
+  }
+  .hero-social-box {
+    padding: 40px 0;
+    height: 104px;
+  }
+  .hero-social-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .menu {
+    background-image: url(/img/hero/bg-hero/bg-hero-tablet@2x.webp);
+  }
+}
+
+/* Styles for Desktop devices */
+
+@media screen and (min-width: 1280px) {
+  .container-hero {
+    padding: 0 32px;
+  }
+  .hero-top-box {
+    background-image: url(/img/hero/bg-hero/bg-hero-desctop.webp);
+    padding-top: 198px;
+    padding-bottom: 116px;
+  }
+  .hero-title-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .main-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-title-img {
+    display: block;
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: 21px;
+    right: 39%;
+  }
+  .hero-img {
+    border-radius: 16px;
+  }
+  .hero-descript {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 72px;
+  }
+  .hero-btn {
+    height: 96px;
+    margin-bottom: 0;
+  }
+
+  .hero-text {
+    width: 592px;
+    height: 96px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .menu {
+    background-image: url(/img/hero/bg-hero/bg-hero-desctop@2x.webp);
+  }
+}
