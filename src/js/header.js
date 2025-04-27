@@ -5,7 +5,7 @@ const { openModalMenuBtn } = refs;
 import { handleOpenMenu, handleChangeThemeText } from './handlers';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const switchers = document.querySelectorAll('.theme-switcher.container');
+  const switchers = document.querySelectorAll('.theme-switcher');
   switchers.forEach(switcher => {
     switcher.addEventListener('click', handleChangeThemeText);
   });
