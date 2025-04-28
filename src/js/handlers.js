@@ -29,6 +29,7 @@ export function handleChangeTheme() {
 export function handleKeyDown(ev) {
   if (ev.key === 'Escape') {
     closeModalMenu();
+    closeFormModal();
   }
 }
 
@@ -95,7 +96,7 @@ export function handleInput(ev) {
 
 export function handleSubmit(ev) {
   ev.preventDefault();
-  closeFormModal();
+  // closeFormModal();
   const userEmail = form.elements['user-email'].value.trim();
   const userComment = form.elements['user-message'].value.trim();
   requestData.email = userEmail;
@@ -107,9 +108,9 @@ export function handleSubmit(ev) {
     return;
   }
   localStorage.removeItem(formData);
-  openFormModal();
 
   renderAnswer(requestData);
+  openFormModal();
   // sendFormData(requestData);
   removeFocus();
   form.reset();
