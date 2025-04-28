@@ -14,10 +14,12 @@
   margin-bottom: 40px;
 }
 /* прибираємо "+" з елементу */
-.ac .ac-trigger::after {
-  content: none !important;
+ul > li.ac .ac-trigger::after {
+  content: '';
 }
-
+ul > li.ac.is-active > .ac-header .ac-trigger::after {
+  content: '';
+}
 /* список */
 .faq-list {
   gap: 0;
@@ -28,10 +30,10 @@
 
 /* елемет списку */
 
-.faq-item.ac {
-  background-color: transparent !important;
-  margin: 0 !important;
-  border: none !important;
+ul > li.ac {
+  background-color: transparent;
+  margin: 0;
+  border: none;
 }
 .faq-item {
   position: relative;
@@ -82,8 +84,9 @@ body.theme-dark .ac.is-active .ac-trigger.faq-question {
   background-color: #204136;
   color: #e4e5e6;
 }
+body.theme-dark .ac .ac-trigger.faq-question:hover,
 body.theme-light .ac .ac-trigger.faq-question:hover {
-  background-color: #b6bebb;
+  background-color: #e1e9e6;
 }
 body.theme-dark .ac .ac-trigger.faq-question {
   color: #e4e5e6;
@@ -91,8 +94,7 @@ body.theme-dark .ac .ac-trigger.faq-question {
 body.theme-dark .ac .ac-trigger.faq-question:hover {
   background-color: #579380;
 }
-
-.faq-arrow-btn-icon {
+*/ .faq-arrow-btn-icon {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
