@@ -89,22 +89,28 @@ function createModal(title, message) {
 
   const closeBtn = backdrop.querySelector('.work-modal-close-btn');
 
-  closeBtn.addEventListener('click', function () {
-    closeModal(backdrop);
-  });
+  // Закриття модального вікна
 
-  backdrop.addEventListener('click', function (event) {
+  function onCloseBtnClick() {
+    closeModal(backdrop);
+  }
+
+  function onBackdropClick(event) {
     if (event.target === backdrop) {
       closeModal(backdrop);
     }
-  });
+  }
 
-  document.addEventListener('keydown', function onEscPress(event) {
+  function onEscPress(event) {
     if (event.key === 'Escape') {
       closeModal(backdrop);
       document.removeEventListener('keydown', onEscPress);
     }
-  });
+  }
+
+  closeBtn.addEventListener('click', onCloseBtnClick);
+  backdrop.addEventListener('click', onBackdropClick);
+  document.addEventListener('keydown', onEscPress);
 }
 
 // Закриття модального вікна

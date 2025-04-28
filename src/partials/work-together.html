@@ -1,18 +1,19 @@
 <!-- Work together section -->
-<section class="section work-together-section">
-  <div class="container">
+<section class="section">
+  <div class="container work-together-container">
     <div class="work-together-bg"></div>
-    <h2 class="work-together-title">
+    <h2 class="work-together-title" id="work-togethe">
       let's <span class="text-accent">work together</span>
     </h2>
-    <div class="work-together-container">
-      <div class="adress-containet">
+    <div class="work-together-contacts-box">
+      <div class="adress-containet work-together-contacts-item">
         <p class="work-together-text">
           Contact me to transform your ideas into exceptional solutions.
         </p>
-        <adress class="work-together-contacts">
-          <ul class="work-together-contacts-list">
-            <li class="work-together-contacts-item">
+
+        <ul class="work-together-contacts-list">
+          <li class="work-together-contacts-item">
+            <address class="work-together-contacts">
               <div class="contact-link-container">
                 <svg class="contacts-icon" width="24" height="24">
                   <use href="/img/sprite-svg/icons.svg#icon"></use>
@@ -21,18 +22,22 @@
                   >+38 090 456 78 90</a
                 >
               </div>
-            </li>
-            <li class="work-together-contacts-item">
+            </address>
+          </li>
+          <li class="work-together-contacts-item">
+            <address class="work-together-contacts">
               <div class="contact-link-container">
                 <svg class="contacts-icon" width="24" height="24">
                   <use href="/img/sprite-svg/icons.svg#icon-1"></use>
                 </svg>
-                <a href="mailto:lloydjefferson@gmail.com"
+                <a class="contact-link" href="mailto:lloydjefferson@gmail.com"
                   >lloydjefferson@gmail.com</a
                 >
               </div>
-            </li>
-            <li class="work-together-contacts-item">
+            </address>
+          </li>
+          <li class="work-together-contacts-item">
+            <address class="work-together-contacts">
               <div class="contact-link-container">
                 <svg class="contacts-icon" width="24" height="24">
                   <use href="/img/sprite-svg/icons.svg#icon-2"></use>
@@ -46,11 +51,11 @@
                   USA, New York
                 </a>
               </div>
-            </li>
-          </ul>
-        </adress>
+            </address>
+          </li>
+        </ul>
       </div>
-      <form class="work-together-form">
+      <form class="work-together-form work-together-contacts-item">
         <input
           class="work-together-input"
           type="email"
