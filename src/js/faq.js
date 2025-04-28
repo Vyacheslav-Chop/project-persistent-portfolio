@@ -17,6 +17,7 @@ document.addEventListener('click', event => {
     removeFocus();
   }
 });
+
 // Зняти фокус, якщо повторно натиснули на відкритий елемент
 accordionList.addEventListener('click', event => {
   const questionBtn = event.target.closest('.ac-trigger');
