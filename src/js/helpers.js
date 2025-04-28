@@ -48,3 +48,7 @@ export function showInfoMessage(message) {
     timeout: 1500,
   });
 }
+
+export function clearContent(container) {
+  container.innerHTML = '';
+}

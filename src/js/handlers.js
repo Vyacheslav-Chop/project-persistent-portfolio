@@ -1,11 +1,18 @@
 // Функції, які передаються колбеками в addEventListner
 import { refs } from './refs';
 import { saveThemeToLocalStorage } from './storage';
-const { body, openModalMenuBtn } = refs;
-import { closeModalMenu, openModalMenu } from './modal';
-import { STORAGE_KEYS } from './constants';
-const { theme, themeText } = STORAGE_KEYS;
-import { removeFocus, scrollToView } from './helpers';
+const { body, openModalMenuBtn, form } = refs;
+import {
+  closeFormModal,
+  closeModalMenu,
+  openFormModal,
+  openModalMenu,
+} from './modal';
+import { STORAGE_KEYS, requestData } from './constants';
+const { theme, themeText, formData } = STORAGE_KEYS;
+import { removeFocus, scrollToView, showErrorMessage } from './helpers';
+// import { sendFormData, testSendFormData } from './api';
+import { renderAnswer } from './render-functions';
 
 // перемикання тем
 export function handleChangeTheme() {
@@ -72,6 +79,49 @@ export function handleChangeThemeText(ev) {
   } else {
     body.classList.add(`text-theme-${theme}`);
     saveThemeToLocalStorage(themeText, `text-theme-${theme}`);
+  }
+  removeFocus();
+}
+
+export function handleInput(ev) {
+  if (ev.target.name === 'user-email') {
+    requestData.email = form.elements['user-email'].value.trim();
+  } else if (ev.target.name === 'user-message') {
+    requestData.comment = form.elements['user-message'].value.trim();
+  }
+
+  localStorage.setItem(formData, JSON.stringify(requestData));
+}
+
+export function handleSubmit(ev) {
+  ev.preventDefault();
+  closeFormModal();
+  const userEmail = form.elements['user-email'].value.trim();
+  const userComment = form.elements['user-message'].value.trim();
+  requestData.email = userEmail;
+  requestData.comment = userComment;
+  if (userEmail === '' || userComment === '') {
+    showErrorMessage(
+      'Something went wrong. Please check your data and try again.'
+    );
+    return;
+  }
+  localStorage.removeItem(formData);
+  openFormModal();
+
+  renderAnswer(requestData);
+  // sendFormData(requestData);
+  removeFocus();
+  form.reset();
+  // testSendFormData(requestData);
+}
+export function handleClick(ev) {
+  const closeAnswerModalBtn = ev.target.closest('.work-modal-close-btn');
+  if (ev.target === ev.currentTarget) {
+    closeFormModal();
+    return;
+  } else if (closeAnswerModalBtn) {
+    closeFormModal();
   }
   removeFocus();
 }

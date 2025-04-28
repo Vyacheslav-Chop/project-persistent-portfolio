@@ -1,7 +1,7 @@
 //Описана робота модалки - відкриття закриття і все що з модалкою повʼязано
-import { handleKeyDown, handleModalClick } from './handlers';
+import { handleClick, handleKeyDown, handleModalClick } from './handlers';
 import { refs } from './refs';
-const { modalMenu, body } = refs;
+const { modalMenu, body, backDropModalAnswer } = refs;
 
 export function openModalMenu() {
   modalMenu.classList.remove('is-close');
@@ -19,3 +19,17 @@ export function closeModalMenu() {
   window.removeEventListener('keydown', handleKeyDown);
 }
 
+export function openFormModal() {
+  backDropModalAnswer.classList.remove('is-close');
+  backDropModalAnswer.classList.add('is-open');
+  body.style.overflow = 'hidden';
+  backDropModalAnswer.addEventListener('click', handleClick);
+  window.addEventListener('keydown', handleKeyDown);
+}
+export function closeFormModal() {
+  backDropModalAnswer.classList.remove('is-open');
+  backDropModalAnswer.classList.add('is-close');
+  body.style.overflow = '';
+  backDropModalAnswer.removeEventListener('click', handleClick);
+  window.removeEventListener('keydown', handleKeyDown);
+}
