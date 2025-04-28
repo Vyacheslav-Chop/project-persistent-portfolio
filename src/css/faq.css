@@ -96,10 +96,10 @@ body.theme-light .ac .ac-trigger.faq-question:hover {
 }
 
 body.theme-dark .ac-trigger .faq-arrow-btn-icon {
-  stroke: inherit;
+  stroke: rgb(171, 163, 163);
 }
 body.theme-light .ac-trigger .faq-arrow-btn-icon {
-  stroke: inherit;
+  stroke: #292929;
 }
 .ac.is-active .faq-arrow-btn-icon {
   transform: rotate(180deg);
