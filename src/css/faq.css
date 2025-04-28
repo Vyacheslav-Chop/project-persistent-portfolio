@@ -94,14 +94,14 @@ body.theme-dark .ac .ac-trigger.faq-question {
 body.theme-dark .ac .ac-trigger.faq-question:hover {
   background-color: #579380;
 }
-*/ .faq-arrow-btn-icon {
+.faq-arrow-btn-icon {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
   stroke: currentColor;
   fill: #292929;
   transition: transform 0.5s ease; /* Плавне обертання */
-  /* background: transparent; */
+
   border: #292929;
   border-radius: 8px;
 }
