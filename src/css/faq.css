@@ -74,17 +74,24 @@ body.theme-dark .faq-item::after {
   transition: background-color color 0.3s ease;
 }
 body.theme-light .ac .ac-trigger.faq-question:focus,
-body.theme-light .ac .ac-trigger.faq-question:hover {
+body.theme-light .ac.is-active .ac .ac-trigger.faq-question {
   background-color: #bcdfd1;
   color: #292929;
 }
-
+body.theme-light .ac .ac-trigger.faq-question:hover {
+  background-color: #b6bebb;
+}
 body.theme-dark .ac .ac-trigger.faq-question {
   color: #e4e5e6;
 }
-body.theme-dark .ac .ac-trigger.faq-question:focus {
+body.theme-dark .ac .ac-trigger.faq-question:hover {
+  background-color: #579380;
+}
+body.theme-dark .ac .ac-trigger.faq-question:focus,
+body.theme-dark .ac.is-active .ac .ac-trigger.faq-question {
   background-color: #204136;
 }
+
 .faq-arrow-btn-icon {
   width: 24px;
   height: 24px;
@@ -168,6 +175,6 @@ body.theme-dark .faq-answer {
 }
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .faq-background {
-    background-image: url('../img/faq/green-decor-desktop@2x.webp.webp');
+    background-image: url('/img/faq/green-decor-desktop@2x.webp.webp');
   }
 }
