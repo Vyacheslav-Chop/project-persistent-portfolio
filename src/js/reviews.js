@@ -4,11 +4,13 @@ import 'swiper/css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-let swiper; 
+let swiper;
 
 async function fetchReviews() {
   try {
-    const response = await axios.get('https://portfolio-js.b.goit.study/api/reviews');
+    const response = await axios.get(
+      'https://portfolio-js.b.goit.study/api/reviews'
+    );
     return response.data;
   } catch (error) {
     iziToast.error({
@@ -36,13 +38,12 @@ function renderReviews(reviews) {
         <p class="text">"${review}"</p>
         <div class="review-author">
           <img src="${avatar_url}" alt="${author}'s avatar" class="avatar">
-          <h4 class="author">${author}</h4>
+          <p class="author">${author}</p>
         </div>
       </div>
     `;
     list.appendChild(li);
   });
-
 }
 
 function initSwiper() {
@@ -53,10 +54,10 @@ function initSwiper() {
       enabled: true,
     },
     breakpoints: {
-    1280: {
-      slidesPerView: 2,
+      1280: {
+        slidesPerView: 2,
+      },
     },
-  },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
