@@ -38,6 +38,12 @@
   height: 92px;
   margin-bottom: 40px;
   align-items: center;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  transform: scale(1.05);
 }
 .hero-btn-content {
   display: flex;

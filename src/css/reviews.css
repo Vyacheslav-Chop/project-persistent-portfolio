@@ -107,12 +107,16 @@ body.theme-dark .review-card {
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 
 .swiper-button-prev:hover,
-.swiper-button-next:hover {
+.swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
     border: 1px solid #292929;
     background-color: #E4E5E6;
+    transform: scale(1.05);
 }
 
 body.theme-dark .swiper-button-prev,
