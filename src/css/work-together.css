@@ -157,6 +157,7 @@ body.theme-light .work-together-textarea:hover::placeholder {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #f0f0f0;
+  transition: all 0.3s ease;
 }
 body.theme-light .work-send-btn {
   background-color: #00b068;
@@ -165,6 +166,7 @@ body.theme-light .work-send-btn {
 .work-send-btn:hover,
 .work-send-btn:focus {
   background-color: #009156;
+  transform: scale(1.05);
 }
 
 /* Styles for tablet */
