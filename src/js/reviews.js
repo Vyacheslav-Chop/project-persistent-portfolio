@@ -1,4 +1,3 @@
-// основна логіка роботи секції
 import axios from 'axios';
 import Swiper from 'swiper';
 import 'swiper/css';
@@ -46,7 +45,6 @@ function renderReviews(reviews) {
 
 }
 
-
 function initSwiper() {
   swiper = new Swiper('.reviews-swiper', {
     slidesPerView: 1,
@@ -65,7 +63,6 @@ function initSwiper() {
     },
   });
 }
-
 
 async function initReviews() {
   const reviews = await fetchReviews();
