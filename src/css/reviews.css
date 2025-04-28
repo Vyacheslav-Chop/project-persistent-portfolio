@@ -1,0 +1,153 @@
+.review-title {
+    font-family: var(--font-helpers);
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .review-title {
+        font-size: 108px;
+        line-height: 1.15;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .review-title {
+        margin-bottom: 80px;
+    }
+}
+
+.reviews-swiper {
+    display: block;
+}
+
+.swiper-wrapper {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    background: #E4E5E6;
+    text-align: center;
+    gap: 24px;
+    padding: 32px;
+    line-height: 24px;
+    border-radius: 16px;
+    width: 100%;
+    min-height: 360px;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    .review-card {
+        min-height: 224px;
+    }
+}
+
+body.theme-dark .review-card {
+    background: #2A2D32;
+}
+
+.text {
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.review-author {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author {
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    padding: 8px 0px 8px 0px;
+}
+
+.swiper-slide {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.swiper-nav {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #E4E5E6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    border: 1px solid #292929;
+    background-color: #E4E5E6;
+}
+
+body.theme-dark .swiper-button-prev,
+body.theme-dark .swiper-button-next {
+    border: 1px solid #2A2D32;
+}
+
+body.theme-dark .swiper-button-prev:hover,
+body.theme-dark .swiper-button-next:hover {
+    border: 1px solid #2A2D32;
+    background-color: #2A2D32;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.swiper-button-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.button-icon-prev {
+    transform: rotate(180deg);
+}
+
+.button-icon,
+.button-icon-prev {
+    margin: 8px;
+    fill: #292929;
+}
+
+body.theme-dark .button-icon-prev,
+body.theme-dark .button-icon {
+    fill: #F0F0F0;
+}

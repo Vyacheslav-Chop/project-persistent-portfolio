@@ -63,3 +63,30 @@ body.theme-dark.text-theme-purple {
 main {
   flex-grow: 1;
 }
+/* scroll to the top */
+.go-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  background-color: #acd9cb;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.go-top--show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-top:hover {
+  background-color: #92bfb0;
+}
