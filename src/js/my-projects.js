@@ -232,24 +232,25 @@ document.addEventListener('DOMContentLoaded', () => {
     </picture>
 
     <p class="projects-stack">${project.stack}</p>
-    <h3 class="projects-name">${project.title.toUpperCase()}</h3>
-    <div class="projects-link-wrapper">
-    <a
-        class="projects-link"
-        href="${project.link}"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        VISIT
-        <img
-        class="projects-icon"
-        src="/img/sprite-svg/icon-projects.svg"
-        alt="Arrow icon"
-        width="18"
-        height="18"
-        />
-    </a>
-</div>
+    <div class="projects-inner">
+        <h3 class="projects-name">${project.title.toUpperCase()}</h3>
+        <a
+            class="projects-link"
+            href="${project.link}"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            VISIT
+            <img
+            class="projects-icon"
+            src="/img/sprite-svg/icon-projects.svg"
+            alt="Arrow icon"
+            width="18"
+            height="18"
+            />
+        </a>
+    </div>
+
 `;
 
             list.appendChild(li);
