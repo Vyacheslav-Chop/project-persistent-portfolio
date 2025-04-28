@@ -77,11 +77,11 @@ body.theme-light .hero-btn:hover .hero-btn-bg,
 }
 
 body.theme-dark .hero-btn-bg {
-  background-color: #009156;
+  background-color: #14C57C;
 }
 body.theme-dark .hero-btn:hover .hero-btn-bg,
 .hero-btn:focus .hero-btn-bg {
-  background-color: #14c57c;
+  background-color: #009156;
 }
 
 .hero-text {
