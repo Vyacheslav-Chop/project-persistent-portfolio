@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/project-persistent-portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/project-persistent-portfolio/assets/vendor-D1KfZiof.js">
     <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/vendor-6W86LUDG.css">
-    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/index-cDc5M9e5.css">
+    <link rel="stylesheet" crossorigin href="/project-persistent-portfolio/assets/index-zUb4dojP.css">
   </head>
   <body class="theme-light">
     <header class="header-section">
@@ -637,20 +637,21 @@
 </section>
 
       <!-- Work together section -->
-<section class="section work-together-section">
-  <div class="container">
+<section class="section">
+  <div class="container work-together-container">
     <div class="work-together-bg"></div>
-    <h2 class="work-together-title">
+    <h2 class="work-together-title" id="work-togethe">
       let's <span class="text-accent">work together</span>
     </h2>
-    <div class="work-together-container">
-      <div class="adress-containet">
+    <div class="work-together-contacts-box">
+      <div class="adress-containet work-together-contacts-item">
         <p class="work-together-text">
           Contact me to transform your ideas into exceptional solutions.
         </p>
-        <adress class="work-together-contacts">
-          <ul class="work-together-contacts-list">
-            <li class="work-together-contacts-item">
+
+        <ul class="work-together-contacts-list">
+          <li class="work-together-contacts-item">
+            <address class="work-together-contacts">
               <div class="contact-link-container">
                 <svg class="contacts-icon" width="24" height="24">
                   <use href="/project-persistent-portfolio/assets/icons-DsBF6FuR.svg#icon"></use>
@@ -659,18 +660,22 @@
                   >+38 090 456 78 90</a
                 >
               </div>
-            </li>
-            <li class="work-together-contacts-item">
+            </address>
+          </li>
+          <li class="work-together-contacts-item">
+            <address class="work-together-contacts">
               <div class="contact-link-container">
                 <svg class="contacts-icon" width="24" height="24">
                   <use href="/project-persistent-portfolio/assets/icons-DsBF6FuR.svg#icon-1"></use>
                 </svg>
-                <a href="mailto:lloydjefferson@gmail.com"
+                <a class="contact-link" href="mailto:lloydjefferson@gmail.com"
                   >lloydjefferson@gmail.com</a
                 >
               </div>
-            </li>
-            <li class="work-together-contacts-item">
+            </address>
+          </li>
+          <li class="work-together-contacts-item">
+            <address class="work-together-contacts">
               <div class="contact-link-container">
                 <svg class="contacts-icon" width="24" height="24">
                   <use href="/project-persistent-portfolio/assets/icons-DsBF6FuR.svg#icon-2"></use>
@@ -684,11 +689,11 @@
                   USA, New York
                 </a>
               </div>
-            </li>
-          </ul>
-        </adress>
+            </address>
+          </li>
+        </ul>
       </div>
-      <form class="work-together-form">
+      <form class="work-together-form work-together-contacts-item">
         <input
           class="work-together-input"
           type="email"
