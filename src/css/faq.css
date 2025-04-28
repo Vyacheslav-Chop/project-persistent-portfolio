@@ -73,10 +73,14 @@ body.theme-dark .faq-item::after {
 
   transition: background-color color 0.3s ease;
 }
-body.theme-light .ac .ac-trigger.faq-question:focus,
-body.theme-light .ac.is-active .ac .ac-trigger.faq-question {
+body.theme-light .ac.is-active .ac-trigger.faq-question {
   background-color: #bcdfd1;
   color: #292929;
+}
+
+body.theme-dark .ac.is-active .ac-trigger.faq-question {
+  background-color: #204136;
+  color: #e4e5e6;
 }
 body.theme-light .ac .ac-trigger.faq-question:hover {
   background-color: #b6bebb;
@@ -86,10 +90,6 @@ body.theme-dark .ac .ac-trigger.faq-question {
 }
 body.theme-dark .ac .ac-trigger.faq-question:hover {
   background-color: #579380;
-}
-body.theme-dark .ac .ac-trigger.faq-question:focus,
-body.theme-dark .ac.is-active .ac .ac-trigger.faq-question {
-  background-color: #204136;
 }
 
 .faq-arrow-btn-icon {

@@ -5,6 +5,7 @@ const { body, openModalMenuBtn } = refs;
 import { closeModalMenu, openModalMenu } from './modal';
 import { STORAGE_KEYS } from './constants';
 const { theme, themeText } = STORAGE_KEYS;
+import { removeFocus, scrollToView } from './helpers';
 
 // перемикання тем
 export function handleChangeTheme() {
@@ -44,11 +45,14 @@ export function handleModalClick(ev) {
   } else if (themeToggleButton) {
     handleChangeTheme();
   }
+  removeFocus();
+  scrollToView();
 }
 
 export function handleOpenMenu() {
   if (openModalMenuBtn) {
     openModalMenu();
+    removeFocus();
   }
 }
 
@@ -69,4 +73,5 @@ export function handleChangeThemeText(ev) {
     body.classList.add(`text-theme-${theme}`);
     saveThemeToLocalStorage(themeText, `text-theme-${theme}`);
   }
+  removeFocus();
 }
