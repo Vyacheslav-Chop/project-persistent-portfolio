@@ -64,7 +64,7 @@ body.theme-dark .faq-item::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #292929;
+  color: inherit;
 
   margin: 0;
   padding: 28px 24px;
@@ -73,23 +73,16 @@ body.theme-dark .faq-item::after {
 }
 body.theme-light .ac.is-active .ac-trigger.faq-question {
   background-color: #bcdfd1;
-  color: #292929;
 }
 
 body.theme-dark .ac.is-active .ac-trigger.faq-question {
   background-color: #204136;
-  color: #e4e5e6;
 }
 body.theme-dark .ac .ac-trigger.faq-question:hover,
 body.theme-light .ac .ac-trigger.faq-question:hover {
-  background-color: #e1e9e6;
+  background-color: #3a6e5b;
 }
-body.theme-dark .ac .ac-trigger.faq-question {
-  color: #e4e5e6;
-}
-body.theme-dark .ac .ac-trigger.faq-question:hover {
-  background-color: #579380;
-}
+
 .faq-arrow-btn-icon {
   width: 24px;
   height: 24px;
@@ -103,10 +96,10 @@ body.theme-dark .ac .ac-trigger.faq-question:hover {
 }
 
 body.theme-dark .ac-trigger .faq-arrow-btn-icon {
-  stroke: #fffdfd;
+  stroke: inherit;
 }
 body.theme-light .ac-trigger .faq-arrow-btn-icon {
-  stroke: #292929;
+  stroke: inherit;
 }
 .ac.is-active .faq-arrow-btn-icon {
   transform: rotate(180deg);
@@ -119,10 +112,10 @@ body.theme-light .ac-trigger .faq-arrow-btn-icon {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
+  color: inherit;
 }
 body.theme-dark .faq-answer {
   background-color: #204136;
-  color: #e4e5e6;
 }
 
 /* tablet */
