@@ -264,10 +264,25 @@ body.theme-light .work-send-btn {
   background-color: rgba(41, 41, 41, 0.8);
   pointer-events: auto;
 }
-.work-together-backdrop.hidden {
+/* .work-together-backdrop.hidden {
   display: none;
   pointer-events: none;
+} */
+
+.work-together-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
 }
+
+.work-together-backdrop.is-close {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
 .work-together-modal {
   z-index: 999999;
   padding: 48px 32px;
