@@ -1,10 +1,9 @@
 /* Мобільні стилі */
 
-/* Приховати фонове зображення на мобільних та планшетах */
 .faq-background {
   display: none;
 }
-/* Заголовок */
+
 .faq-title {
   font-family: var(--font-helpers);
   font-size: 52px;
@@ -13,22 +12,20 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-/* прибираємо "+" з елементу */
+
 ul > li.ac .ac-trigger::after {
   content: '';
 }
 ul > li.ac.is-active > .ac-header .ac-trigger::after {
   content: '';
 }
-/* список */
+
 .faq-list {
   gap: 0;
   justify-content: flex-start;
   margin: 0;
   background-color: transparent;
 }
-
-/* елемет списку */
 
 ul > li.ac {
   background-color: transparent;
@@ -54,7 +51,6 @@ body.theme-dark .faq-item::after {
   background-color: #e4e5e6;
 }
 
-/* Питання */
 .ac .ac-trigger.faq-question {
   font-family: var(--font-main);
   line-height: 1.56;
@@ -73,7 +69,7 @@ body.theme-dark .faq-item::after {
   margin: 0;
   padding: 28px 24px;
 
-  transition: background-color color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 body.theme-light .ac.is-active .ac-trigger.faq-question {
   background-color: #bcdfd1;
@@ -100,13 +96,12 @@ body.theme-dark .ac .ac-trigger.faq-question:hover {
   flex-shrink: 0;
   stroke: currentColor;
   fill: #292929;
-  transition: transform 0.5s ease; /* Плавне обертання */
+  transition: transform 0.5s ease;
 
   border: #292929;
   border-radius: 8px;
 }
 
-/* Іконки для темної/світлої теми */
 body.theme-dark .ac-trigger .faq-arrow-btn-icon {
   stroke: #fffdfd;
 }
@@ -116,7 +111,7 @@ body.theme-light .ac-trigger .faq-arrow-btn-icon {
 .ac.is-active .faq-arrow-btn-icon {
   transform: rotate(180deg);
 }
-/* відповідь */
+
 .faq-answer {
   padding: 28px 24px;
   background-color: #bcdfd1;
