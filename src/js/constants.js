@@ -28,7 +28,7 @@ export const projectData = [
               '2x': '/img/projects/project-wallet@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
       title: 'Green Harvest Online Store',
@@ -47,7 +47,7 @@ export const projectData = [
               '2x': '/img/projects/project-greenharvest@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
       title: 'English Excellence Website',
@@ -66,7 +66,7 @@ export const projectData = [
               '2x': '/img/projects/project-english@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
       title: 'Fruitbox Online Store',
@@ -85,7 +85,7 @@ export const projectData = [
               '2x': '/img/projects/project-fruitbox@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
       title: 'Vyshyvanka Vibes Landing Page',
@@ -104,7 +104,7 @@ export const projectData = [
               '2x': '/img/projects/project-vyshyvanka@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
       title: 'Energy Flow Webservice',
@@ -123,7 +123,7 @@ export const projectData = [
               '2x': '/img/projects/project-energyflow@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
       title: 'Chego Jewelry Website',
@@ -142,7 +142,7 @@ export const projectData = [
               '2x': '/img/projects/project-chego@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
       title: 'Mimino Website',
@@ -161,7 +161,7 @@ export const projectData = [
               '2x': '/img/projects/project-mimino@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
       title: 'Power Pulse',
@@ -180,7 +180,7 @@ export const projectData = [
               '2x': '/img/projects/project-powerpulse@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
       title: 'Starlight Studio Landing Page',
@@ -199,6 +199,6 @@ export const projectData = [
               '2x': '/img/projects/project-starlight@2x.webp',
           },
       },
-      link: '#',
+      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
 ];
