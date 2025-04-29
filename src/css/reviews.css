@@ -31,6 +31,13 @@
   width: 100%;
   min-height: 440px;
   justify-content: space-between;
+  transition: all;
+}
+
+.review-card:hover,
+.review-card:focus {
+    box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-dark .review-card {

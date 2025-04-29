@@ -9,10 +9,6 @@ export async function sendFormData(value) {
   return data;
 }
 
-// export async function testSendFormData(value) {
-//   const result = await sendFormData(value);
-//   console.log(result);
-// }
 export async function fetchReviews() {
   const { data } = await axios.get(
     'https://portfolio-js.b.goit.study/api/reviews'

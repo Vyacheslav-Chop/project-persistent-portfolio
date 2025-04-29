@@ -10,8 +10,13 @@ import {
 } from './modal';
 import { STORAGE_KEYS, requestData } from './constants';
 const { theme, themeText, formData } = STORAGE_KEYS;
-import { removeFocus, scrollToView, showErrorMessage } from './helpers';
-// import { sendFormData, testSendFormData } from './api';
+import {
+  isValidEmail,
+  removeFocus,
+  scrollToView,
+  showErrorMessage,
+} from './helpers';
+
 import { renderAnswer } from './render-functions';
 
 // перемикання тем
@@ -29,6 +34,7 @@ export function handleChangeTheme() {
 export function handleKeyDown(ev) {
   if (ev.key === 'Escape') {
     closeModalMenu();
+    closeFormModal();
   }
 }
 
@@ -89,13 +95,13 @@ export function handleInput(ev) {
   } else if (ev.target.name === 'user-message') {
     requestData.comment = form.elements['user-message'].value.trim();
   }
-
+  isValidEmail(requestData.email);
   localStorage.setItem(formData, JSON.stringify(requestData));
 }
 
 export function handleSubmit(ev) {
   ev.preventDefault();
-  closeFormModal();
+
   const userEmail = form.elements['user-email'].value.trim();
   const userComment = form.elements['user-message'].value.trim();
   requestData.email = userEmail;
@@ -106,15 +112,17 @@ export function handleSubmit(ev) {
     );
     return;
   }
+
   localStorage.removeItem(formData);
-  openFormModal();
 
   renderAnswer(requestData);
-  // sendFormData(requestData);
+  openFormModal();
+
   removeFocus();
   form.reset();
-  // testSendFormData(requestData);
+  isValidEmail();
 }
+
 export function handleClick(ev) {
   const closeAnswerModalBtn = ev.target.closest('.work-modal-close-btn');
   if (ev.target === ev.currentTarget) {
@@ -125,3 +133,4 @@ export function handleClick(ev) {
   }
   removeFocus();
 }
+// isValidEmail;

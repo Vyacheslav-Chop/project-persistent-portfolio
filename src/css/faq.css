@@ -1,10 +1,9 @@
 /* Мобільні стилі */
 
-/* Приховати фонове зображення на мобільних та планшетах */
 .faq-background {
   display: none;
 }
-/* Заголовок */
+
 .faq-title {
   font-family: var(--font-helpers);
   font-size: 52px;
@@ -13,27 +12,18 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-/* прибираємо "+" з елементу */
+
 ul > li.ac .ac-trigger::after {
   content: '';
 }
 ul > li.ac.is-active > .ac-header .ac-trigger::after {
   content: '';
 }
-/* список */
-.faq-list {
-  gap: 0;
-  justify-content: flex-start;
-  margin: 0;
-  background-color: transparent;
-}
-
-/* елемет списку */
 
 ul > li.ac {
   background-color: transparent;
-  margin: 0;
   border: none;
+  margin-bottom: 0;
 }
 .faq-item {
   position: relative;
@@ -54,26 +44,19 @@ body.theme-dark .faq-item::after {
   background-color: #e4e5e6;
 }
 
-/* Питання */
 .ac .ac-trigger.faq-question {
   font-family: var(--font-main);
   line-height: 1.56;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background: transparent;
-  border: none;
   font-size: 18px;
-  font-weight: normal;
-  cursor: pointer;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: inherit;
-
-  margin: 0;
   padding: 28px 24px;
-
-  transition: background-color color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 body.theme-light .ac.is-active .ac-trigger.faq-question {
   background-color: #bcdfd1;
@@ -93,13 +76,11 @@ body.theme-light .ac .ac-trigger.faq-question:hover {
   flex-shrink: 0;
   stroke: currentColor;
   fill: #292929;
-  transition: transform 0.5s ease; /* Плавне обертання */
-
+  transition: transform 0.5s ease;
   border: #292929;
   border-radius: 8px;
 }
 
-/* Іконки для темної/світлої теми */
 body.theme-dark .ac-trigger .faq-arrow-btn-icon {
   stroke: rgb(171, 163, 163);
 }
@@ -109,16 +90,14 @@ body.theme-light .ac-trigger .faq-arrow-btn-icon {
 .ac.is-active .faq-arrow-btn-icon {
   transform: rotate(180deg);
 }
-/* відповідь */
+
 .faq-answer {
   padding: 28px 24px;
   background-color: #bcdfd1;
-  font-family: var(--font-main);
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.03em;
-  color: inherit;
 }
+
 body.theme-dark .faq-answer {
   background-color: #204136;
 }
@@ -129,7 +108,7 @@ body.theme-dark .faq-answer {
     font-size: 108px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    margin-bottom: 90px;
+    margin-bottom:60px;
   }
   .faq-question {
     font-size: 20px;
@@ -148,13 +127,12 @@ body.theme-dark .faq-answer {
 
   .faq-title {
     max-width: 520px;
+    margin-bottom: 0;
   }
   .faq-list {
     position: absolute;
     bottom: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
+    right: 32px;
     max-width: 592px;
   }
   /* Фонове зображення */

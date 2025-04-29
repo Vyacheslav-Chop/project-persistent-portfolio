@@ -8,9 +8,6 @@
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 
   --font-main: 'Poppins', sans-serif;
   --font-helpers: 'Impact', sans-serif;
@@ -63,10 +60,10 @@ body.theme-dark.text-theme-purple {
 main {
   flex-grow: 1;
 }
-/* scroll to the top */
+
 .go-top {
   position: fixed;
-  bottom: 40px;
+  bottom: 20px;
   right: 40px;
   width: 48px;
   height: 48px;

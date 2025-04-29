@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 0 10px;
 }
 
 @media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
@@ -60,15 +61,43 @@ body.theme-dark .menu-close-btn-icon {
   stroke: #f0f0f0;
 }
 
+body.theme-light.text-theme-red .menu-close-btn-icon {
+  stroke: #6a1b9a;
+}
+
+body.theme-dark.text-theme-red .menu-close-btn-icon {
+  stroke: #b388ff;
+}
+
+body.theme-light.text-theme-blue .menu-close-btn-icon {
+  stroke: #ef6c00;
+}
+
+body.theme-dark.text-theme-blue .menu-close-btn-icon {
+  stroke: #ffb74d;
+}
+
+body.theme-light.text-theme-purple .menu-close-btn-icon {
+  stroke: #cddc39;
+}
+
+body.theme-dark.text-theme-purple .menu-close-btn-icon {
+  stroke: #e6ee9c;
+}
+
 body.theme-light .menu-close-btn-icon:hover,
 body.theme-light .menu-close-btn-icon:focus {
   stroke: #00b068;
   transform: scale(1.09);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 body.theme-dark .menu-close-btn-icon:hover,
 body.theme-dark .menu-close-btn-icon:focus {
   stroke: #14c57c;
   transform: scale(1.09);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 .menu-wrapper {
@@ -102,22 +131,52 @@ body.theme-dark .menu {
 
 body.theme-light .menu-order-link {
   background-color: #00b068;
+  color: #f0f0f0;
 }
 
 body.theme-dark .menu-order-link {
   background-color: #14c57c;
+  color: #292929;
+}
+
+body.theme-light.text-theme-red .menu-order-link {
+  background-color: #6a1b9a;
+}
+
+body.theme-dark.text-theme-red .menu-order-link {
+  background-color: #b388ff;
+}
+
+body.theme-light.text-theme-blue .menu-order-link {
+  background-color: #ef6c00;
+}
+
+body.theme-dark.text-theme-blue .menu-order-link {
+  background-color: #ffb74d;
+}
+
+body.theme-light.text-theme-purple .menu-order-link {
+  background-color: #cddc39;
+}
+
+body.theme-dark.text-theme-purple .menu-order-link {
+  background-color: #e6ee9c;
 }
 
 body.theme-light .menu-order-link:hover,
 body.theme-light .menu-order-link:focus {
   background-color: #009156;
   transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-dark .menu-order-link:hover,
 body.theme-dark .menu-order-link:focus {
   background-color: #009156;
   transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 .menu-nav-list {
@@ -165,6 +224,7 @@ body.theme-dark ul.social-list.menu-social-list {
 @media screen and (min-width: 768px) {
   .menu {
     background-image: url('/img/modal-imgs/decor-tablet-menu.webp');
+    padding: 0 32px;
   }
 
   ul.social-list.menu-social-list {

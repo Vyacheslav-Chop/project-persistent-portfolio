@@ -93,7 +93,6 @@ body.theme-dark .benefits-div-icon {
 @media screen and (min-width: 1280px) {
   .benefits-container {
     position: relative;
-    padding: 0 32px;
   }
 
   .benefits-background-wrapper {
