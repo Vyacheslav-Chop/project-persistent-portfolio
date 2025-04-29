@@ -99,8 +99,13 @@ body.theme-light .work-together-input:hover::placeholder {
   color: #e74a3b;
 } */
 
-.work-together-input.error {
+/* .work-together-input.error {
   color: #e74a3b;
+} */
+
+.input-error {
+  color: #e74a3b;
+  margin-bottom: 5px;
 }
 
 .email-error {

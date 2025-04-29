@@ -10,7 +10,12 @@ import {
 } from './modal';
 import { STORAGE_KEYS, requestData } from './constants';
 const { theme, themeText, formData } = STORAGE_KEYS;
-import { removeFocus, scrollToView, showErrorMessage } from './helpers';
+import {
+  isValidEmail,
+  removeFocus,
+  scrollToView,
+  showErrorMessage,
+} from './helpers';
 // import { sendFormData, testSendFormData } from './api';
 import { renderAnswer } from './render-functions';
 
@@ -107,6 +112,12 @@ export function handleSubmit(ev) {
     );
     return;
   }
+
+  if (!isValidEmail(userEmail)) {
+    showErrorMessage('Invalid email format.');
+    return;
+  }
+
   localStorage.removeItem(formData);
 
   renderAnswer(requestData);
@@ -126,3 +137,4 @@ export function handleClick(ev) {
   }
   removeFocus();
 }
+isValidEmail;

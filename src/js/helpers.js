@@ -52,3 +52,33 @@ export function showInfoMessage(message) {
 export function clearContent(container) {
   container.innerHTML = '';
 }
+
+export function isValidEmail(emailValue) {
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  const emailInput = document.querySelector('#user-email');
+  const emailError = document.querySelector('.email-error');
+
+  const isValid = emailPattern.test(emailValue);
+
+  if (!isValid) {
+    emailInput.classList.add('error');
+    emailInput.style.color = 'red';
+    emailInput.style.marginBottom = '5px';
+
+    emailError.classList.remove('hidden');
+    emailError.style.marginBottom = '16px';
+  } else {
+    // Очищення стилів при валідному email
+    emailInput.classList.remove('error');
+    emailInput.style.color = '';
+    emailInput.style.marginBottom = '';
+
+    emailError.classList.add('hidden');
+    emailError.style.marginBottom = '';
+  }
+
+  return isValid;
+}
+console.log(isValidEmail('test@.ukr.net'));
+console.log(isValidEmail('test.ukr.net'));
