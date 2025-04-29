@@ -49,14 +49,46 @@ body.theme-dark .contacts-icon {
   stroke: #14c57c;
 }
 
+body.theme-light.text-theme-red .contacts-icon {
+  stroke: #6a1b9a;
+}
+
+body.theme-dark.text-theme-red .contacts-icon {
+  stroke: #b388ff;
+}
+
+body.theme-light.text-theme-blue .contacts-icon {
+  stroke: #ef6c00;
+}
+
+body.theme-dark.text-theme-blue .contacts-icon {
+  stroke: #ffb74d;
+}
+
+body.theme-light.text-theme-purple .contacts-icon {
+  stroke: #cddc39;
+}
+
+body.theme-dark.text-theme-purple .contacts-icon {
+  stroke: #e6ee9c;
+}
+
+.contact-link {
+  transition: all 0.3s ease;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
 body.theme-dark .contact-link:hover,
 body.theme-dark .contact-link:focus {
   color: #14c57c;
+  transform: scale(1.05);
 }
 
 body.theme-light .contact-link:hover,
 body.theme-light .contact-link:focus {
   color: #00b068;
+  transform: scale(1.05);
 }
 
 .work-together-form {
@@ -74,6 +106,7 @@ body.theme-light .contact-link:focus {
   padding: 12px 16px;
   margin-bottom: 32px;
   color: rgba(240, 240, 240, 0.4);
+  transition: all 0.3s ease;
 }
 
 body.theme-light .work-together-input {
@@ -83,8 +116,10 @@ body.theme-light .work-together-input {
 
 .work-together-input:hover,
 .work-together-input:focus {
-  /* outline: none; */
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
   color: #f0f0f0;
+  transform: scale(1.05);
 }
 
 .work-together-input:hover::placeholder {
@@ -126,6 +161,7 @@ body.theme-light .work-together-input:hover::placeholder {
   background-color: #2a2d32;
   resize: none;
   margin-bottom: 32px;
+  transition: all 0.3s ease;
 }
 
 body.theme-light .work-together-textarea {
@@ -135,7 +171,10 @@ body.theme-light .work-together-textarea {
 
 .work-together-textarea:hover,
 .work-together-textarea:focus {
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
   color: #f0f0f0;
+  transform: scale(1.05);
 }
 
 .work-together-textarea:hover::placeholder {
@@ -151,22 +190,61 @@ body.theme-light .work-together-textarea:hover::placeholder {
   border-radius: 8px;
   padding: 12px 24px;
   width: 100%;
-  background-color: #14c57c;
   font-family: var(--font-main);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #f0f0f0;
   transition: all 0.3s ease;
 }
+
 body.theme-light .work-send-btn {
   background-color: #00b068;
+  color: #292929;
 }
 
-.work-send-btn:hover,
-.work-send-btn:focus {
+body.theme-dark .work-send-btn {
+  background-color: #14c57c;
+  color: #f0f0f0;
+}
+
+body.theme-light.text-theme-red .work-send-btn {
+  background-color: #6a1b9a;
+}
+
+body.theme-dark.text-theme-red .work-send-btn {
+  background-color: #b388ff;
+}
+
+body.theme-light.text-theme-blue .work-send-btn {
+  background-color: #ef6c00;
+}
+
+body.theme-dark .text-theme-blue .work-send-btn {
+  background-color: #ffb74d;
+}
+
+body.theme-light.text-theme-purple .work-send-btn {
+  background-color: #cddc39;
+}
+
+body.theme-dark.text-theme-purple .work-send-btn {
+  background-color: #e6ee9c;
+}
+
+body.theme-light .work-send-btn:hover,
+body.theme-light .work-send-btn:focus {
   background-color: #009156;
   transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
+}
+
+body.theme-dark .work-send-btn:hover,
+body.theme-dark .work-send-btn:focus {
+  background-color: #009156;
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 /* Styles for tablet */

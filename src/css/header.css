@@ -70,7 +70,31 @@ body.theme-dark.text-theme-purple .text-accent {
   border-radius: 50%;
   background-color: #00b068;
   top: 2px;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body.theme-light.text-theme-red .toggle-theme-btn-circle {
+  background-color: #6a1b9a;
+}
+
+body.theme-dark.text-theme-red .toggle-theme-btn-circle {
+  background-color: #b388ff;
+}
+
+body.theme-light.text-theme-blue .toggle-theme-btn-circle {
+  background-color: #ef6c00;
+}
+
+body.theme-dark.text-theme-blue .toggle-theme-btn-circle {
+  background-color: #ffb74d;
+}
+
+body.theme-light.text-theme-purple .toggle-theme-btn-circle {
+  background-color: #cddc39;
+}
+
+body.theme-dark.text-theme-purple .toggle-theme-btn-circle {
+  background-color: #e6ee9c;
 }
 
 body.theme-light .toggle-theme-btn {
@@ -80,6 +104,8 @@ body.theme-light .toggle-theme-btn {
 body.theme-light .toggle-theme-btn:hover,
 body.theme-light .toggle-theme-btn:focus {
   transform: scale(1.09);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-dark .toggle-theme-btn {
@@ -89,6 +115,8 @@ body.theme-dark .toggle-theme-btn {
 body.theme-dark .toggle-theme-btn:hover,
 body.theme-dark .toggle-theme-btn:focus {
   transform: scale(1.09);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-light .toggle-theme-btn-circle {
@@ -132,6 +160,8 @@ body.theme-light .burger-menu-btn-icon:hover,
 body.theme-light .burger-menu-btn-icon:focus {
   fill: #00b068;
   transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-dark .burger-menu-btn-icon {
@@ -142,6 +172,32 @@ body.theme-dark .burger-menu-btn-icon:hover,
 body.theme-dark .burger-menu-btn-icon:focus {
   fill: #14c57c;
   transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
+}
+
+body.theme-light.text-theme-red .burger-menu-btn-icon {
+  fill: #6a1b9a;
+}
+
+body.theme-dark.text-theme-red .burger-menu-btn-icon {
+  fill: #b388ff;
+}
+
+body.theme-light.text-theme-blue .burger-menu-btn-icon {
+  fill: #ef6c00;
+}
+
+body.theme-dark.text-theme-blue .burger-menu-btn-icon {
+  fill: #ffb74d;
+}
+
+body.theme-light.text-theme-purple .burger-menu-btn-icon {
+  fill: #cddc39;
+}
+
+body.theme-dark.text-theme-purple .burger-menu-btn-icon {
+  fill: #e6ee9c;
 }
 
 .nav {
@@ -175,6 +231,8 @@ body.theme-dark .burger-menu-btn-icon:focus {
 .text-theme-btn:hover,
 .text-theme-btn:focus {
   transform: scale(1.09);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-light .text-theme-btn-defolt {
@@ -239,28 +297,57 @@ body.theme-dark .text-theme-btn-purple {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     border-radius: 8px;
-    color: #f0f0f0;
     transition: all 0.3s ease;
   }
 
   body.theme-light .order-link {
     background-color: #00b068;
+    color: #292929;
   }
 
   body.theme-dark .order-link {
     background-color: #14c57c;
+    color: #f0f0f0;
   }
+
+  body.theme-light.text-theme-red .order-link {
+  background-color: #6a1b9a;
+}
+
+body.theme-dark.text-theme-red .order-link {
+  background-color: #b388ff;
+}
+
+body.theme-light.text-theme-blue .order-link {
+  background-color: #ef6c00;
+}
+
+body.theme-dark.text-theme-blue .order-link {
+  background-color: #ffb74d;
+}
+
+body.theme-light.text-theme-purple .order-link {
+  background-color: #cddc39;
+}
+
+body.theme-dark.text-theme-purple .order-link {
+  background-color: #e6ee9c;
+}
 
   body.theme-light .order-link:hover,
   body.theme-light .order-link:focus {
     background-color: #009156;
     transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
   }
 
   body.theme-dark .order-link:hover,
   body.theme-dark .order-link:focus {
     background-color: #009156;
     transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
   }
 }
 
