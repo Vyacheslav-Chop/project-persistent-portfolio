@@ -281,7 +281,7 @@ body.theme-dark .work-send-btn:focus {
     background-position: center;
     position: absolute;
     top: -120px;
-    right: 0;
+    right: 32px;
   }
 }
 
@@ -323,7 +323,6 @@ body.theme-dark .work-send-btn:focus {
     background-image: url('/img/work-together/bg-imgs/decor-bg-4-desktop.webp');
     position: absolute;
     top: -116px;
-    right: 5%;
   }
 }
 
