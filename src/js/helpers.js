@@ -2,8 +2,9 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { refs } from './refs';
+import { createProjectsMarkup } from './render-functions';
 
-const { form } = refs;
+const { form, loadMoreBtn } = refs;
 function removeFocusFromElements() {
   const interactiveElements = document.querySelectorAll('a, button');
   interactiveElements.forEach(interactiveElement => interactiveElement.blur());
@@ -93,4 +94,35 @@ export function isValidEmail(emailValue) {
   }
 
   return isValid;
+}
+export function showLoadMoreBtn() {
+  loadMoreBtn.hidden = false;
+}
+
+export function hideLoadMoreBtn() {
+  loadMoreBtn.hidden = true;
+}
+
+export function appendProjects(element, array) {
+  element.insertAdjacentHTML('beforeend', array);
+}
+
+export function smoothScrollItems(galleryItem) {
+  const rect = galleryItem.getBoundingClientRect();
+  const heightItem = rect.height;
+
+  window.scrollBy({
+    top: heightItem * 0.8,
+    behavior: 'smooth',
+  });
+}
+
+export function checkEndOfCollection(counter, array) {
+  if (counter >= array.length) {
+    showInfoMessage('There are no more products to load at the moment.');
+    hideLoadMoreBtn();
+    
+  } else {
+    showLoadMoreBtn();
+  }
 }

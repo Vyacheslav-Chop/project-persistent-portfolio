@@ -156,25 +156,11 @@ body.theme-light .toggle-theme-btn-circle::before {
   transition: all 0.3s ease;
 }
 
-body.theme-light .burger-menu-btn-icon:hover,
-body.theme-light .burger-menu-btn-icon:focus {
-  fill: #00b068;
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
-    0 0 80px rgba(0, 255, 128, 0.4);
-}
 
 body.theme-dark .burger-menu-btn-icon {
   fill: #f0f0f0;
 }
 
-body.theme-dark .burger-menu-btn-icon:hover,
-body.theme-dark .burger-menu-btn-icon:focus {
-  fill: #14c57c;
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
-    0 0 80px rgba(0, 255, 128, 0.4);
-}
 
 body.theme-light.text-theme-red .burger-menu-btn-icon {
   fill: #6a1b9a;
@@ -198,6 +184,21 @@ body.theme-light.text-theme-purple .burger-menu-btn-icon {
 
 body.theme-dark.text-theme-purple .burger-menu-btn-icon {
   fill: #e6ee9c;
+}
+
+body.theme-light .burger-menu-btn-icon:hover,
+body.theme-light .burger-menu-btn-icon:focus {
+  fill: #00b068;
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
+}
+body.theme-dark .burger-menu-btn-icon:hover,
+body.theme-dark .burger-menu-btn-icon:focus {
+  fill: #14c57c;
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 .nav {

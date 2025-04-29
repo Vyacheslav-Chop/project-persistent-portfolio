@@ -1,4 +1,36 @@
 //Константи
+
+// wallet
+import walletImg1x from '../img/projects/wallet.avif';
+import walletImg2x from '../img/projects/wallet@2x.avif';
+// green
+import greenImg1x from '../img/projects/green-harvest.avif';
+import greenImg2x from '../img/projects/green-harvest@2x.avif';
+// english
+import englishImg1x from '../img/projects/english.avif';
+import englishImg2x from '../img/projects/english@2x.avif';
+// fruitbox
+import fruitBoxImg1x from '../img/projects/fruitbox.avif';
+import fruitBoxImg2x from '../img/projects/fruitbox@2x.avif';
+// vysshyvanka
+import vyshyvankaImg1x from '../img/projects/vyshyvanka.avif';
+import vyshyvankaImg2x from '../img/projects/vyshyvanka.avif';
+// energy
+import energyImg1x from '../img/projects/energy.avif';
+import energyImg2x from '../img/projects/energy@2x.avif';
+// chego
+import chegoImg1x from '../img/projects/chego.avif';
+import chegoImg2x from '../img/projects/chego@2x.avif';
+// mimino
+import miminoImg1x from '../img/projects/mimino.avif';
+import miminoImg2x from '../img/projects/mimino@2x.avif';
+// power
+import powerImg1x from '../img/projects/power-puls.avif';
+import powerImg2x from '../img/projects/power-puls@2x.avif';
+// starlight
+import starlightImg1x from '../img/projects/starlight.avif';
+import starlightImg2x from '../img/projects/starlight@2x.avif';
+
 export const STORAGE_KEYS = {
   theme: 'theme',
   themeText: 'themeText',
@@ -10,195 +42,76 @@ export let requestData = {
   comment: '',
 };
 
-export const projectData = [
+export const projects = [
   {
-      title: 'Wallet Webservice',
-      stack: 'React, JavaScript, Node.js, Git',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-wallet.webp',
-              '2x': '/img/projects/project-wallet@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-wallet.webp',
-              '2x': '/img/projects/project-wallet@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-wallet.webp',
-              '2x': '/img/projects/project-wallet@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'Wallet Webservice',
+    stack: 'React, JavaScript, Node.js, Git',
+    img1x: walletImg1x,
+    img2x: walletImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
-      title: 'Green Harvest Online Store',
-      stack: 'React, JavaScript, Node.js, Git',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-greenharvest.webp',
-              '2x': '/img/projects/project-greenharvest@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-greenharvest.webp',
-              '2x': '/img/projects/project-greenharvest@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-greenharvest.webp',
-              '2x': '/img/projects/project-greenharvest@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'Green Harvest Online Store',
+    stack: 'React, JavaScript, Node.js, Git',
+    img1x: greenImg1x,
+    img2x: greenImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
-      title: 'English Excellence Website',
-      stack: 'HTML, CSS, JS',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-english.webp',
-              '2x': '/img/projects/project-english@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-english.webp',
-              '2x': '/img/projects/project-english@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-english.webp',
-              '2x': '/img/projects/project-english@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'English Excellence Website',
+    stack: 'HTML, CSS, JS',
+    img1x: englishImg1x,
+    img2x: englishImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
-      title: 'Fruitbox Online Store',
-      stack: 'HTML, CSS, JS',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-fruitbox.webp',
-              '2x': '/img/projects/project-fruitbox@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-fruitbox.webp',
-              '2x': '/img/projects/project-fruitbox@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-fruitbox.webp',
-              '2x': '/img/projects/project-fruitbox@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'Fruitbox Online Store',
+    stack: 'HTML, CSS, JS',
+    img1x: fruitBoxImg1x,
+    img2x: fruitBoxImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
-      title: 'Vyshyvanka Vibes Landing Page',
-      stack: 'React, Tailwind CSS',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-vyshyvanka.webp',
-              '2x': '/img/projects/project-vyshyvanka@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-vyshyvanka.webp',
-              '2x': '/img/projects/project-vyshyvanka@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-vyshyvanka.webp',
-              '2x': '/img/projects/project-vyshyvanka@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'Vyshyvanka Vibes Landing Page',
+    stack: 'React, Tailwind CSS',
+    img1x: vyshyvankaImg1x,
+    img2x: vyshyvankaImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
-      title: 'Energy Flow Webservice',
-      stack: 'React, SCSS',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-energyflow.webp',
-              '2x': '/img/projects/project-energyflow@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-energyflow.webp',
-              '2x': '/img/projects/project-energyflow@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-energyflow.webp',
-              '2x': '/img/projects/project-energyflow@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'Energy Flow Webservice',
+    stack: 'React, SCSS',
+    img1x: energyImg1x,
+    img2x: energyImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
-      title: 'Chego Jewelry Website',
-      stack: 'React, SCSS',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-chego.webp',
-              '2x': '/img/projects/project-chego@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-chego.webp',
-              '2x': '/img/projects/project-chego@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-chego.webp',
-              '2x': '/img/projects/project-chego@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'Chego Jewelry Website',
+    stack: 'React, SCSS',
+    img1x: chegoImg1x,
+    img2x: chegoImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
-      title: 'Mimino Website',
-      stack: 'HTML, CSS',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-mimino.webp',
-              '2x': '/img/projects/project-mimino@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-mimino.webp',
-              '2x': '/img/projects/project-mimino@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-mimino.webp',
-              '2x': '/img/projects/project-mimino@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'Mimino Website',
+    stack: 'HTML, CSS',
+    img1x: miminoImg1x,
+    img2x: miminoImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
-      title: 'Power Pulse',
-      stack: 'JS, Node.js',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-powerpulse.webp',
-              '2x': '/img/projects/project-powerpulse@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-powerpulse.webp',
-              '2x': '/img/projects/project-powerpulse@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-powerpulse.webp',
-              '2x': '/img/projects/project-powerpulse@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'Power Pulse',
+    stack: 'JS, Node.js',
+    img1x: powerImg1x,
+    img2x: powerImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
   {
-      title: 'Starlight Studio Landing Page',
-      stack: 'JS, Node.js, Git',
-      img: {
-          mobile: {
-              '1x': '/img/projects/project-starlight.webp',
-              '2x': '/img/projects/project-starlight@2x.webp',
-          },
-          tablet: {
-              '1x': '/img/projects/project-starlight.webp',
-              '2x': '/img/projects/project-starlight@2x.webp',
-          },
-          desktop: {
-              '1x': '/img/projects/project-starlight.webp',
-              '2x': '/img/projects/project-starlight@2x.webp',
-          },
-      },
-      link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    title: 'Starlight Studio Landing Page',
+    stack: 'JS, Node.js, Git',
+    img1x: starlightImg1x,
+    img2x: starlightImg2x,
+    link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
   },
 ];
+

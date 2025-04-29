@@ -7,4 +7,6 @@ export const refs = {
   form: document.querySelector('.work-together-form'),
   modalAnswer: document.querySelector('.work-together-modal'),
   backDropModalAnswer: document.querySelector('.work-together-backdrop'),
+  projectsContainer: document.querySelector('.projects-list'),
+  loadMoreBtn: document.querySelector('.projects-load-more'),
 };
