@@ -348,10 +348,6 @@ body.theme-dark .work-send-btn:focus {
   background-color: rgba(41, 41, 41, 0.8);
   pointer-events: auto;
 }
-/* .work-together-backdrop.hidden {
-  display: none;
-  pointer-events: none;
-} */
 
 .work-together-backdrop.is-open {
   opacity: 1;
@@ -378,6 +374,8 @@ body.theme-dark .work-send-btn:focus {
   height: 328px;
   border-radius: 16px;
   background-color: #2a2d32;
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-light .work-together-modal {
@@ -396,6 +394,7 @@ body.theme-light .work-together-modal {
   width: 24px;
   height: 24px;
   background-color: #2a2d32;
+  transition: all 0.3s ease;
 }
 body.theme-light .work-modal-close-btn {
   background-color: #f0f0f0;
@@ -404,8 +403,10 @@ body.theme-light .work-modal-close-btn {
 .work-modal-close-btn:hover,
 .work-modal-close-btn:focus {
   background-color: #3b3f45;
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
-.work-modal-btn-close-icon {
+body.theme-dark .work-modal-btn-close-icon {
   fill: none;
   stroke: #f0f0f0;
 }
@@ -413,6 +414,44 @@ body.theme-light .work-modal-close-btn {
 body.theme-light .work-modal-btn-close-icon {
   fill: none;
   stroke: #2a2d32;
+}
+
+body.theme-light.text-theme-red .work-modal-btn-close-icon {
+  stroke: #6a1b9a;
+}
+
+body.theme-dark.text-theme-red .work-modal-btn-close-icon {
+  stroke: #b388ff;
+}
+
+body.theme-light.text-theme-blue .work-modal-btn-close-icon {
+  stroke: #ef6c00;
+}
+
+body.theme-dark.text-theme-blue .work-modal-btn-close-icon {
+  stroke: #ffb74d;
+}
+
+body.theme-light.text-theme-purple .work-modal-btn-close-icon {
+  stroke: #cddc39;
+}
+
+body.theme-dark.text-theme-purple .work-modal-btn-close-icon {
+  stroke: #e6ee9c;
+}
+
+body.theme-light .work-modal-btn-close-icon:hover,
+body.theme-light .work-modal-btn-close-icon:focus {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
+}
+
+body.theme-dark .work-modal-btn-close-icon:hover,
+body.theme-dark .work-modal-btn-close-icon:focus {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 .work-modal-title {
