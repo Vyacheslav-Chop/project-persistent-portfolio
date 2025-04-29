@@ -8,6 +8,11 @@ const { modalAnswer } = refs;
 
 function createAnswer(title, message) {
   return `
+  <button class="work-modal-close-btn" type="button">
+      <svg class="work-modal-btn-close-icon" width="24" height="24">
+        <use href="/img/sprite-svg/icons.svg#x"></use>
+      </svg>
+    </button>
 <h3 class="work-modal-title text-accent">
       ${title}
     </h3>
