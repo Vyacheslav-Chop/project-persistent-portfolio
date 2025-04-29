@@ -8,8 +8,3 @@ export async function sendFormData(value) {
   );
   return data;
 }
-
-// export async function testSendFormData(value) {
-//   const result = await sendFormData(value);
-//   console.log(result);
-// }

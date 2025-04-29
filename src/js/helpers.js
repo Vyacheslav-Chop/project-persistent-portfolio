@@ -1,7 +1,9 @@
 //Допоміжні функції
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { refs } from './refs';
 
+const { form } = refs;
 function removeFocusFromElements() {
   const interactiveElements = document.querySelectorAll('a, button');
   interactiveElements.forEach(interactiveElement => interactiveElement.blur());
@@ -58,6 +60,7 @@ export function isValidEmail(emailValue) {
 
   const emailInput = document.querySelector('#user-email');
   const emailError = document.querySelector('.email-error');
+  const userInput = form.elements['user-email'].value.trim();
 
   const isValid = emailPattern.test(emailValue);
 
@@ -77,8 +80,9 @@ export function isValidEmail(emailValue) {
     emailError.classList.add('hidden');
     emailError.style.marginBottom = '';
   }
+  if (userInput === '') {
+    emailError.classList.add('hidden');
+  }
 
   return isValid;
 }
-console.log(isValidEmail('test@.ukr.net'));
-console.log(isValidEmail('test.ukr.net'));

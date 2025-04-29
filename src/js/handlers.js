@@ -16,7 +16,7 @@ import {
   scrollToView,
   showErrorMessage,
 } from './helpers';
-// import { sendFormData, testSendFormData } from './api';
+
 import { renderAnswer } from './render-functions';
 
 // перемикання тем
@@ -95,13 +95,13 @@ export function handleInput(ev) {
   } else if (ev.target.name === 'user-message') {
     requestData.comment = form.elements['user-message'].value.trim();
   }
-
+  isValidEmail(requestData.email);
   localStorage.setItem(formData, JSON.stringify(requestData));
 }
 
 export function handleSubmit(ev) {
   ev.preventDefault();
-  // closeFormModal();
+
   const userEmail = form.elements['user-email'].value.trim();
   const userComment = form.elements['user-message'].value.trim();
   requestData.email = userEmail;
@@ -113,19 +113,13 @@ export function handleSubmit(ev) {
     return;
   }
 
-  if (!isValidEmail(userEmail)) {
-    showErrorMessage('Invalid email format.');
-    return;
-  }
-
   localStorage.removeItem(formData);
 
   renderAnswer(requestData);
   openFormModal();
-  // sendFormData(requestData);
+
   removeFocus();
   form.reset();
-  // testSendFormData(requestData);
 }
 export function handleClick(ev) {
   const closeAnswerModalBtn = ev.target.closest('.work-modal-close-btn');
