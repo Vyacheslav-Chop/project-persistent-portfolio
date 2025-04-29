@@ -1,40 +1,31 @@
 <section class="section">
-    <div class="container container-review">
-        <h2 class="review-title">REVIEWS</h2>
-        <div class="swiper reviews-swiper">
-            <ul class="swiper-wrapper" id="reviews-list"></ul>
-        
-            <div class="swiper-nav">
-                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
-                    <svg class="button-icon-prev" width="40" height="40">
-                        <use href="/img/sprite-svg/icons.svg#icon-arrow-right2"></use>
-                    </svg>
-                </div>
-                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
-                    <svg class="button-icon" width="40" height="40">
-                        <use href="/img/sprite-svg/icons.svg#icon-arrow-right2"></use>
-                    </svg>
-                </div>
-            </div>
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-            <script>
-                const swiper = new Swiper('.reviews-swiper', {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                    keyboard: {
-                        enabled: true,
-                    },
-                    breakpoints: {
-                        1280: {
-                            slidesPerView: 2,
-                        },
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-            </script>
+  <div class="container container-review">
+    <h2 class="review-title">REVIEWS</h2>
+    <div class="swiper reviews-swiper">
+      <ul class="swiper-wrapper" id="reviews-list"></ul>
+
+      <div class="swiper-nav">
+        <div
+          class="swiper-button-prev"
+          tabindex="0"
+          role="button"
+          aria-label="Previous slide"
+        >
+          <svg class="button-icon-prev" width="40" height="40">
+            <use href="/img/sprite-svg/icons.svg#icon-arrow-right2"></use>
+          </svg>
         </div>
+        <div
+          class="swiper-button-next"
+          tabindex="0"
+          role="button"
+          aria-label="Next slide"
+        >
+          <svg class="button-icon" width="40" height="40">
+            <use href="/img/sprite-svg/icons.svg#icon-arrow-right2"></use>
+          </svg>
+        </div>
+      </div>
     </div>
+  </div>
 </section>

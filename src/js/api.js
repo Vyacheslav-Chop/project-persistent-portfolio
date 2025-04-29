@@ -8,3 +8,10 @@ export async function sendFormData(value) {
   );
   return data;
 }
+
+export async function fetchReviews() {
+  const { data } = await axios.get(
+    'https://portfolio-js.b.goit.study/api/reviews'
+  );
+  return data;
+}

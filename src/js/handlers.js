@@ -121,7 +121,9 @@ export function handleSubmit(ev) {
 
   removeFocus();
   form.reset();
+  isValidEmail();
 }
+
 export function handleClick(ev) {
   const closeAnswerModalBtn = ev.target.closest('.work-modal-close-btn');
   if (ev.target === ev.currentTarget) {
@@ -133,6 +135,7 @@ export function handleClick(ev) {
   removeFocus();
 }
 
+
 export function handleLoadMore() {
   renderProjects(projectsContainer, projects);
   const galleryItem = document.querySelector('.projects-item');
@@ -142,3 +145,4 @@ export function handleLoadMore() {
   }, 10);
   removeFocus();
 }
+

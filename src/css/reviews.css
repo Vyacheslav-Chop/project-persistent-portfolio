@@ -10,20 +10,6 @@
   margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 768px) {
-  .review-title {
-    font-size: 108px;
-    line-height: 1.15;
-    margin-bottom: 60px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .review-title {
-    margin-bottom: 80px;
-  }
-}
-
 .reviews-swiper {
   display: block;
 }
@@ -52,12 +38,6 @@
 .review-card:focus {
     box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
     0 0 80px rgba(0, 255, 128, 0.4);
-}
-
-@media only screen and (min-width: 768px) {
-  .review-card {
-    min-height: 250px;
-  }
 }
 
 body.theme-dark .review-card {
@@ -93,19 +73,26 @@ body.theme-dark .review-card {
 
 .swiper-slide {
   display: flex;
+  margin-bottom: 24px;
   /* justify-content: center; */
 }
 
 .swiper-nav {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   align-items: flex-end;
   justify-content: flex-end;
   z-index: 1;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-nav .swiper-button-prev::after,
+.swiper-nav .swiper-button-next::after {
+  content: '';
+}
+
+.swiper-nav .swiper-button-prev,
+.swiper-nav .swiper-button-next {
+  position: initial;
   width: 40px;
   height: 40px;
   border: 1px solid #e4e5e6;
@@ -161,4 +148,22 @@ body.theme-dark .swiper-button-next:hover {
 body.theme-dark .button-icon-prev,
 body.theme-dark .button-icon {
   fill: #f0f0f0;
+}
+@media only screen and (min-width: 768px) {
+  .review-title {
+    font-size: 108px;
+    line-height: 1.15;
+    margin-bottom: 60px;
+  }
+  .review-card {
+    min-height: 250px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper-nav {
+    gap: 24px;
+  }
+  .review-title {
+    margin-bottom: 80px;
+  }
 }

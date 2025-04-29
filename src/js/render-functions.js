@@ -38,6 +38,23 @@ export async function renderAnswer(value) {
   }
 }
 
+// Розмітка reviews
+export function createMarkUpReviews(reviews) {
+  return reviews
+    .map(
+      ({ author, avatar_url, review }) => `
+      <li class="swiper-slide">
+        <div class="review-card">
+          <p class="text">"${review}"</p>
+          <div class="review-author">
+            <img src="${avatar_url}" alt="${author}'s avatar" class="avatar">
+            <p class="author">${author}</p>
+          </div>
+        </div>
+      </li>`
+    )
+}
+
 export function createProjectsMarkup(array) {
   return array
     .map(
