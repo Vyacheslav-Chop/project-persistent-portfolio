@@ -57,9 +57,9 @@ export function clearContent(container) {
 
 export function isValidEmail(emailValue) {
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
   const emailInput = document.querySelector('#user-email');
   const emailError = document.querySelector('.email-error');
+  const inputIcon = document.querySelector('.work-together-input-wrapper');
   const userInput = form.elements['user-email'].value.trim();
 
   const isValid = emailPattern.test(emailValue);
@@ -69,6 +69,10 @@ export function isValidEmail(emailValue) {
     emailInput.style.color = 'red';
     emailInput.style.marginBottom = '5px';
 
+    emailError.classList.add('hidden');
+
+    inputIcon.classList.add('hidden');
+
     emailError.classList.remove('hidden');
     emailError.style.marginBottom = '16px';
   } else {
@@ -77,11 +81,15 @@ export function isValidEmail(emailValue) {
     emailInput.style.color = '';
     emailInput.style.marginBottom = '';
 
+    inputIcon.classList.remove('hidden');
+
     emailError.classList.add('hidden');
     emailError.style.marginBottom = '';
   }
   if (userInput === '') {
     emailError.classList.add('hidden');
+    inputIcon.classList.add('hidden');
+    emailInput.style.marginBottom = '32px';
   }
 
   return isValid;

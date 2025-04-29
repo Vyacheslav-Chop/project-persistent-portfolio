@@ -120,7 +120,9 @@ export function handleSubmit(ev) {
 
   removeFocus();
   form.reset();
+  isValidEmail();
 }
+
 export function handleClick(ev) {
   const closeAnswerModalBtn = ev.target.closest('.work-modal-close-btn');
   if (ev.target === ev.currentTarget) {
@@ -131,4 +133,4 @@ export function handleClick(ev) {
   }
   removeFocus();
 }
-isValidEmail;
+// isValidEmail;
