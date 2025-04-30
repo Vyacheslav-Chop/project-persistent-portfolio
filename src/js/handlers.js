@@ -1,7 +1,8 @@
 // Функції, які передаються колбеками в addEventListner
 import { refs } from './refs';
 import { saveThemeToLocalStorage } from './storage';
-const { body, openModalMenuBtn, form, projectsContainer } = refs;
+const { body, openModalMenuBtn, form, projectsContainer, closeCollectionBtn } =
+  refs;
 import {
   closeFormModal,
   closeModalMenu,
@@ -11,14 +12,22 @@ import {
 import { STORAGE_KEYS, requestData, projects } from './constants';
 const { theme, themeText, formData } = STORAGE_KEYS;
 import {
+  clearContent,
   isValidEmail,
   removeFocus,
   scrollToView,
   showErrorMessage,
   smoothScrollItems,
+  showBtn,
+  hideBtn,
+  scrollToFirstProject,
 } from './helpers';
 
-import { renderAnswer, renderProjects } from './render-functions';
+import {
+  renderAnswer,
+  renderProjects,
+  resetProjects,
+} from './render-functions';
 
 // перемикання тем
 export function handleChangeTheme() {
@@ -135,7 +144,6 @@ export function handleClick(ev) {
   removeFocus();
 }
 
-
 export function handleLoadMore() {
   renderProjects(projectsContainer, projects);
   const galleryItem = document.querySelector('.projects-item');
@@ -144,5 +152,14 @@ export function handleLoadMore() {
     smoothScrollItems(galleryItem);
   }, 10);
   removeFocus();
+  showBtn(closeCollectionBtn);
 }
 
+export function handleCloseCollection() {
+  clearContent(projectsContainer);
+
+  resetProjects(projectsContainer, projects);
+  hideBtn(closeCollectionBtn);
+  scrollToFirstProject();
+  removeFocus();
+}

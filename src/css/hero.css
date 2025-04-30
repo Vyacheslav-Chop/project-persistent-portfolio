@@ -66,9 +66,17 @@ body.theme-dark .hero-btn-text {
   color: #f0f0f0;
 }
 
+body.theme-light .hero-btn-text-accent {
+  color: #f0f0f0;
+}
+
+body.theme-dark .hero-btn-text-accent {
+  color: #292929;
+}
+
 .hero-btn-bg {
   position: absolute;
-  left: 40%;
+  left: 45%;
   display: block;
   border-radius: 16px;
   width: 165px;
@@ -112,6 +120,48 @@ body.theme-light.text-theme-purple .hero-btn-bg {
 
 body.theme-dark.text-theme-purple .hero-btn-bg {
   background-color: #e6ee9c;
+}
+
+body.theme-light.text-theme-red .hero-btn-bg:hover,
+body.theme-light.text-theme-red .hero-btn-bg:focus {
+  background-color: #58118d;
+  box-shadow: 0 4px 20px rgba(170, 0, 255, 0.2), 0 0 40px rgba(170, 0, 255, 0.5),
+    0 0 80px rgba(170, 0, 255, 0.4);
+}
+
+body.theme-light.text-theme-blue .hero-btn-bg:hover,
+body.theme-light.text-theme-blue .hero-btn-bg:focus {
+  background-color: #c45500;
+  box-shadow: 0 4px 20px rgba(255, 110, 0, 0.2), 0 0 40px rgba(255, 110, 0, 0.5),
+    0 0 80px rgba(255, 110, 0, 0.4);
+}
+
+body.theme-light.text-theme-purple .hero-btn-bg:hover,
+body.theme-light.text-theme-purple .hero-btn-bg:focus {
+  background-color: #afb833;
+  box-shadow: 0 4px 20px rgba(210, 255, 0, 0.2), 0 0 40px rgba(210, 255, 0, 0.5),
+    0 0 80px rgba(210, 255, 0, 0.4);
+}
+
+body.theme-dark.text-theme-red .hero-btn-bg:hover,
+body.theme-dark.text-theme-red .hero-btn-bg:focus {
+  background-color: #58118d;
+  box-shadow: 0 4px 20px rgba(170, 0, 255, 0.2), 0 0 40px rgba(170, 0, 255, 0.5),
+    0 0 80px rgba(170, 0, 255, 0.4);
+}
+
+body.theme-dark.text-theme-blue .hero-btn-bg:hover,
+body.theme-dark.text-theme-blue .hero-btn-bg:focus {
+  background-color: #c45500;
+  box-shadow: 0 4px 20px rgba(255, 110, 0, 0.2), 0 0 40px rgba(255, 110, 0, 0.5),
+    0 0 80px rgba(255, 110, 0, 0.4);
+}
+
+body.theme-dark.text-theme-purple .hero-btn-bg:hover,
+body.theme-dark.text-theme-purple .hero-btn-bg:focus {
+  background-color: #afb833;
+  box-shadow: 0 4px 20px rgba(210, 255, 0, 0.2), 0 0 40px rgba(210, 255, 0, 0.5),
+    0 0 80px rgba(210, 255, 0, 0.4);
 }
 
 body.theme-dark .hero-btn-bg:hover,

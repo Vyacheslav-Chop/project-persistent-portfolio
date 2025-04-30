@@ -1,12 +1,12 @@
 import { sendFormData } from './api';
 import { clearContent, showErrorMessage } from './helpers';
 import { refs } from './refs';
-import { appendProjects, checkEndOfCollection } from './helpers';
+import { appendProjects, checkEndOfCollection, hideBtn } from './helpers';
 
 let displayedProjectsCount = 0;
 const count = 3;
 
-const { modalAnswer } = refs;
+const { modalAnswer, closeCollectionBtn } = refs;
 
 //Функцію для створення, рендеру або видалення розмітки
 
@@ -82,6 +82,7 @@ export function createProjectsMarkup(array) {
 }
 
 export function renderProjects(element, array) {
+  hideBtn(closeCollectionBtn);
   const projectsToShow = array.slice(
     displayedProjectsCount,
     displayedProjectsCount + count
@@ -93,4 +94,9 @@ export function renderProjects(element, array) {
   displayedProjectsCount += count;
 
   checkEndOfCollection(displayedProjectsCount, array);
+}
+
+export function resetProjects(element, array) {
+  displayedProjectsCount = 0;
+  renderProjects(element, array);
 }

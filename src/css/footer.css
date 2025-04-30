@@ -58,11 +58,57 @@ body.theme-light .social-link:hover,
 body.theme-light .social-link:focus {
   color: #00b068;
   transform: scale(1.05);
+  text-shadow: 0 4px 20px rgba(0, 255, 128, 0.2),
+    0 0 40px rgba(0, 255, 128, 0.5), 0 0 80px rgba(0, 255, 128, 0.4);
 }
 body.theme-dark .social-link:hover,
 body.theme-dark .social-link:focus {
   color: #14c57c;
   transform: scale(1.05);
+  text-shadow: 0 4px 20px rgba(0, 255, 128, 0.2),
+    0 0 40px rgba(0, 255, 128, 0.5), 0 0 80px rgba(0, 255, 128, 0.4);
+}
+
+body.theme-light.text-theme-red .social-link:hover,
+body.theme-light.text-theme-red .social-link:focus {
+  color: #58118d;
+  text-shadow: 0 4px 20px rgba(170, 0, 255, 0.2),
+    0 0 40px rgba(170, 0, 255, 0.5), 0 0 80px rgba(170, 0, 255, 0.4);
+}
+
+body.theme-light.text-theme-blue .social-link:hover,
+body.theme-light.text-theme-blue .social-link:focus {
+  color: #c45500;
+  text-shadow: 0 4px 20px rgba(255, 110, 0, 0.2),
+    0 0 40px rgba(255, 110, 0, 0.5), 0 0 80px rgba(255, 110, 0, 0.4);
+}
+
+body.theme-light.text-theme-purple .social-link:hover,
+body.theme-light.text-theme-purple .social-link:focus {
+  color: #afb833;
+  text-shadow: 0 4px 20px rgba(210, 255, 0, 0.2),
+    0 0 40px rgba(210, 255, 0, 0.5), 0 0 80px rgba(210, 255, 0, 0.4);
+}
+
+body.theme-dark.text-theme-red .social-link:hover,
+body.theme-dark.text-theme-red .social-link:focus {
+  color: #a657e0;
+  text-shadow: 0 4px 20px rgba(170, 0, 255, 0.2),
+    0 0 40px rgba(170, 0, 255, 0.5), 0 0 80px rgba(170, 0, 255, 0.4);
+}
+
+body.theme-dark.text-theme-blue .social-link:hover,
+body.theme-dark.text-theme-blue .social-link:focus {
+  color: #c45500;
+  text-shadow: 0 4px 20px rgba(255, 110, 0, 0.2),
+    0 0 40px rgba(255, 110, 0, 0.5), 0 0 80px rgba(255, 110, 0, 0.4);
+}
+
+body.theme-dark.text-theme-purple .social-link:hover,
+body.theme-dark.text-theme-purple .social-link:focus {
+  color: #afb833;
+  text-shadow: 0 4px 20px rgba(210, 255, 0, 0.2),
+    0 0 40px rgba(210, 255, 0, 0.5), 0 0 80px rgba(210, 255, 0, 0.4);
 }
 
 .copy-text {
