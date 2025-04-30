@@ -4,10 +4,23 @@
   line-height: 1.23;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-bottom: 40px;
+}
+
+.not-found {
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);  
+}
+.not-founs-title {
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .reviews-swiper {
@@ -36,7 +49,7 @@
 
 .review-card:hover,
 .review-card:focus {
-    box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
     0 0 80px rgba(0, 255, 128, 0.4);
 }
 

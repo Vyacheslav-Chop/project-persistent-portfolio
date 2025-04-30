@@ -2,7 +2,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { refs } from './refs';
-import { createProjectsMarkup } from './render-functions';
 
 const { form, loadMoreBtn } = refs;
 function removeFocusFromElements() {
@@ -119,7 +118,7 @@ export function smoothScrollItems(galleryItem) {
 
 export function checkEndOfCollection(counter, array) {
   if (counter >= array.length) {
-    showInfoMessage('There are no more products to load at the moment.');
+    showInfoMessage('There are no more projets to load at the moment.');
     hideLoadMoreBtn();
     
   } else {

@@ -1,4 +1,3 @@
-import axios from 'axios';
 import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
@@ -6,6 +5,7 @@ import 'swiper/css/navigation';
 import { createMarkUpReviews } from './render-functions';
 import { fetchReviews } from './api';
 import { showErrorMessage } from './helpers';
+import { refs } from './refs';
 
 Swiper.use([Navigation, Keyboard, Mousewheel]);
 
@@ -14,12 +14,18 @@ async function initReviews() {
     const reviews = await fetchReviews();
     const wrapper = document.querySelector('#reviews-list');
 
-    if (!reviews || !reviews.length) {
-      wrapper.innerHTML = `<li class="no-reviews">Not found</li>`;
+    if (!reviews || reviews.length === 0) {
+      wrapper.innerHTML = `
+    <li
+     class="not-found">
+      <h3 class="not-founs-title">Not found</h3>
+    </li>
+  `;
       return;
     }
 
     wrapper.innerHTML = createMarkUpReviews(reviews);
+
 
     const swiper = new Swiper('.reviews-swiper', {
       slidesPerView: 1,
