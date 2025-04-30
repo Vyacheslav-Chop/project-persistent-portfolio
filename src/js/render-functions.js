@@ -40,8 +40,9 @@ export async function renderAnswer(value) {
 
 // Розмітка reviews
 export function createMarkUpReviews(reviews) {
-  return reviews.map(
-    ({ author, avatar_url, review }) => `
+  return reviews
+    .map(
+      ({ author, avatar_url, review }) => `
       <li class="swiper-slide">
         <div class="review-card">
           <p class="text">"${review}"</p>
@@ -51,7 +52,8 @@ export function createMarkUpReviews(reviews) {
           </div>
         </div>
       </li>`
-  );
+    )
+    .join('');
 }
 
 export function createProjectsMarkup(array) {

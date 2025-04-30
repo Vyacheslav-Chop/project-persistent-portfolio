@@ -12,9 +12,9 @@
   padding: 10px;
   width: 100%;
   box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
-    0 0 80px rgba(0, 255, 128, 0.4);  
+    0 0 80px rgba(0, 255, 128, 0.4);
 }
-.not-founs-title {
+.not-found-title {
   font-size: 52px;
   line-height: 1.23;
   letter-spacing: 1.8px;
@@ -87,7 +87,6 @@ body.theme-dark .review-card {
 .swiper-slide {
   display: flex;
   margin-bottom: 24px;
-  /* justify-content: center; */
 }
 
 .swiper-nav {
@@ -96,6 +95,7 @@ body.theme-dark .review-card {
   align-items: flex-end;
   justify-content: flex-end;
   z-index: 1;
+  padding: 15px 15px;
 }
 
 .swiper-nav .swiper-button-prev::after,
@@ -136,14 +136,11 @@ body.theme-dark .swiper-button-next:hover {
   border: 1px solid #2a2d32;
   background-color: #2a2d32;
 }
+/* заблокована кнопка
+ */
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  opacity: 0.3;
-  pointer-events: none;
-}
-
-.swiper-button-disabled {
   opacity: 0.3;
   pointer-events: none;
 }

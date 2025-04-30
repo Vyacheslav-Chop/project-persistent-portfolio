@@ -27,6 +27,7 @@ ul > li.ac {
 }
 .faq-item {
   position: relative;
+  transition: all 0.3s ease;
 }
 .faq-item::after {
   position: absolute;
@@ -36,6 +37,13 @@ ul > li.ac {
   bottom: 0;
   right: 0;
 }
+.faq-item:hover,
+.faq-item:focus {
+  box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+    0 0 80px rgba(0, 255, 128, 0.4);
+  transform: scale(1.05);
+}
+
 body.theme-light .faq-item::after {
   background-color: #e4e5e6;
 }
@@ -67,7 +75,8 @@ body.theme-dark .ac.is-active .ac-trigger.faq-question {
 }
 body.theme-dark .ac .ac-trigger.faq-question:hover,
 body.theme-light .ac .ac-trigger.faq-question:hover {
-  background-color: #3a6e5b;
+  background-color: #9bcfbc;
+  color: #292929;
 }
 
 .faq-arrow-btn-icon {
