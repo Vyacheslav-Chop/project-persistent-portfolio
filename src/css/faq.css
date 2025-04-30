@@ -108,7 +108,7 @@ body.theme-dark .faq-answer {
     font-size: 108px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    margin-bottom:60px;
+    margin-bottom: 60px;
   }
   .faq-question {
     font-size: 20px;
@@ -138,7 +138,7 @@ body.theme-dark .faq-answer {
   /* Фонове зображення */
   .faq-background {
     display: flex;
-    background-image: url('/img/faq/green-decor-desktop.webp');
+    background-image: url('/img/faq/decor-green-desktop.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -148,6 +148,6 @@ body.theme-dark .faq-answer {
 }
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .faq-background {
-    background-image: url('/img/faq/green-decor-desktop@2x.webp.webp');
+    background-image: url('/img/faq/decor-green-desktop@2x.webp');
   }
 }
