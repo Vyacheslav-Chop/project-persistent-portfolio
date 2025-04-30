@@ -1,17 +1,17 @@
 .theme-light .marquee__inner-1 {
-    background-color: #BCDFD1; 
-  }
+  background-color: #bcdfd1;
+}
 
 .theme-light .marquee__inner-2 {
-    background-color: #E4E5E6;
+  background-color: #e4e5e6;
 }
 
 .theme-dark .marquee__inner-1 {
-    background-color: #204136;
+  background-color: #204136;
 }
 
 .theme-dark .marquee__inner-2 {
-    background-color: #3B3F45;
+  background-color: #3b3f45;
 }
 
 .dot {
@@ -19,18 +19,18 @@
 }
 
 .dot::before {
-  content: '';  
+  content: '';
   position: absolute;
   top: 50%;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 8px;
   height: 8px;
-  border-radius: 2px; 
+  border-radius: 2px;
 }
 
 .theme-light .marquee__inner-1 .dot::before {
-  background-color: #00B068;
+  background-color: #00b068;
 }
 
 .theme-light .marquee__inner-2 .dot::before {
@@ -38,11 +38,11 @@
 }
 
 .theme-dark .marquee__inner-1 .dot::before {
-  background-color: #14C57C;
+  background-color: #14c57c;
 }
 
 .theme-dark .marquee__inner-2 .dot::before {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .marquee-1,
@@ -66,14 +66,14 @@
   animation: marquee 30s linear infinite;
 }
 
- @keyframes marquee {
+@keyframes marquee {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(-40%);
   }
-} 
+}
 
 .marquee__inner-2 {
   animation-delay: 150ms;
@@ -103,7 +103,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .marquee-line {
     font-size: 36px;
     line-height: 1.33;

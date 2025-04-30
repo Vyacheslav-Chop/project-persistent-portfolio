@@ -20,17 +20,13 @@ async function initReviews() {
         </li>
       `;
 
-      // Скрываем навигационные стрелки
-      const navEl = document.querySelector('.swiper-nav');
-      if (navEl) {
-        nav.style.display = 'none';
-      }
       return;
     }
 
     wrapper.innerHTML = createMarkUpReviews(reviews);
 
     const swiper = new Swiper('.reviews-swiper', {
+      enabled: reviews.length > 1,
       slidesPerView: 1,
       spaceBetween: 20,
       navigation: {
@@ -59,8 +55,9 @@ async function initReviews() {
     function updateButtons() {
       const next = swiper.navigation.nextEl;
       const prev = swiper.navigation.prevEl;
+
       next.classList.toggle('swiper-button-disabled', swiper.isEnd);
-      prev.classList.toggle('swiper-button-disabled');
+      prev.classList.toggle('swiper-button-disabled', swiper.isBeginning);
     }
 
     updateButtons();
