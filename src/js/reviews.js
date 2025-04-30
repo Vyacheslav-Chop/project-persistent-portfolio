@@ -15,11 +15,16 @@ async function initReviews() {
 
     if (!reviews || reviews.length === 0) {
       wrapper.innerHTML = `
-    <li
-     class="not-found">
-      <h3 class="not-founs-title">Not found</h3>
-    </li>
-  `;
+        <li class="not-found">
+          <h3 class="not-found-title">Not found</h3>
+        </li>
+      `;
+
+      // Скрываем навигационные стрелки
+      const navEl = document.querySelector('.swiper-nav');
+      if (navEl) {
+        nav.style.display = 'none';
+      }
       return;
     }
 
@@ -52,11 +57,10 @@ async function initReviews() {
     });
 
     function updateButtons() {
-      const next = document.querySelector('.swiper-button-next');
-      const prev = document.querySelector('.swiper-button-prev');
-
+      const next = swiper.navigation.nextEl;
+      const prev = swiper.navigation.prevEl;
       next.classList.toggle('swiper-button-disabled', swiper.isEnd);
-      prev.classList.toggle('swiper-button-disabled', swiper.isBeginning);
+      prev.classList.toggle('swiper-button-disabled');
     }
 
     updateButtons();

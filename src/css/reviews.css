@@ -162,6 +162,7 @@ body.theme-dark .review-card {
   align-items: flex-end;
   justify-content: flex-end;
   z-index: 1;
+  padding: 15px 15px;
 }
 
 .swiper-nav .swiper-button-prev::after,
@@ -202,14 +203,11 @@ body.theme-dark .swiper-button-next:hover {
   border: 1px solid #2a2d32;
   background-color: #2a2d32;
 }
+/* заблокована кнопка
+ */
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  opacity: 0.3;
-  pointer-events: none;
-}
-
-.swiper-button-disabled {
   opacity: 0.3;
   pointer-events: none;
 }
