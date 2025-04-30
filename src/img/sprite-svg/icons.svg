@@ -4,9 +4,6 @@
       <path
         d="M5.334 23.027v-1.333h21.333v1.333H5.334zm0-6.36v-1.333h21.333v1.333H5.334zm0-6.36V8.974h21.333v1.333H5.334z" />
     </symbol>
-    <symbol id="close" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 8 8 24M8 8l16 16"/>
-    </symbol>
     <symbol id="chevron-up" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-width="2.667" d="m24 20-8-8-8 8" />
     </symbol>
@@ -17,8 +14,8 @@
         d="M2 14c-1.105 0-2 0.895-2 2s0.895 2 2 2v-4zM59.414 17.414c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l12.728-12.728zM2 18h56v-4h-56v4z">
       </path>
     </symbol>
-    <symbol id="x" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M24 8 8 24M8 8l16 16" />
+    <symbol id="close" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 8 8 24M8 8l16 16"/>
     </symbol>
     <symbol id="ep_success-filled" viewBox="0 0 32 32">
       <path
