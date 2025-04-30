@@ -3,7 +3,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { refs } from './refs';
 
-const { form, loadMoreBtn, closeCollectionBtn } = refs;
+const { form, loadMoreBtn } = refs;
 function removeFocusFromElements() {
   const interactiveElements = document.querySelectorAll('a, button');
   interactiveElements.forEach(interactiveElement => interactiveElement.blur());
@@ -120,7 +120,6 @@ export function checkEndOfCollection(counter, array) {
   if (counter >= array.length) {
     showInfoMessage('There are no more projets to load at the moment.');
     hideBtn(loadMoreBtn);
-    
   } else {
     showBtn(loadMoreBtn);
   }
