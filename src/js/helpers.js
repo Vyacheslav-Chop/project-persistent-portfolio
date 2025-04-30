@@ -3,7 +3,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { refs } from './refs';
 
-const { form, loadMoreBtn } = refs;
+const { form, loadMoreBtn, closeCollectionBtn } = refs;
 function removeFocusFromElements() {
   const interactiveElements = document.querySelectorAll('a, button');
   interactiveElements.forEach(interactiveElement => interactiveElement.blur());
@@ -94,12 +94,12 @@ export function isValidEmail(emailValue) {
 
   return isValid;
 }
-export function showLoadMoreBtn() {
-  loadMoreBtn.hidden = false;
+export function showBtn(btn) {
+  btn.hidden = false;
 }
 
-export function hideLoadMoreBtn() {
-  loadMoreBtn.hidden = true;
+export function hideBtn(btn) {
+  btn.hidden = true;
 }
 
 export function appendProjects(element, array) {
@@ -111,7 +111,7 @@ export function smoothScrollItems(galleryItem) {
   const heightItem = rect.height;
 
   window.scrollBy({
-    top: heightItem * 0.8,
+    top: heightItem * 1,
     behavior: 'smooth',
   });
 }
@@ -119,9 +119,16 @@ export function smoothScrollItems(galleryItem) {
 export function checkEndOfCollection(counter, array) {
   if (counter >= array.length) {
     showInfoMessage('There are no more projets to load at the moment.');
-    hideLoadMoreBtn();
+    hideBtn(loadMoreBtn);
     
   } else {
-    showLoadMoreBtn();
+    showBtn(loadMoreBtn);
+  }
+}
+
+export function scrollToFirstProject() {
+  const firstProject = document.querySelector('.projects-item');
+  if (firstProject) {
+    firstProject.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }

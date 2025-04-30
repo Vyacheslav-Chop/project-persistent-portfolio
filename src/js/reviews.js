@@ -5,7 +5,6 @@ import 'swiper/css/navigation';
 import { createMarkUpReviews } from './render-functions';
 import { fetchReviews } from './api';
 import { showErrorMessage } from './helpers';
-import { refs } from './refs';
 
 Swiper.use([Navigation, Keyboard, Mousewheel]);
 
@@ -25,7 +24,6 @@ async function initReviews() {
     }
 
     wrapper.innerHTML = createMarkUpReviews(reviews);
-
 
     const swiper = new Swiper('.reviews-swiper', {
       slidesPerView: 1,

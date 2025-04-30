@@ -198,12 +198,16 @@ body.theme-light .menu-nav-link:hover,
 body.theme-light .menu-nav-link:focus {
   color: #00b068;
   transform: scale(1.05);
+  text-shadow: 0 4px 20px rgba(0, 255, 128, 0.2),
+    0 0 40px rgba(0, 255, 128, 0.5), 0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-dark .menu-nav-link:hover,
 body.theme-dark .menu-nav-link:hover {
   color: #14c57c;
   transform: scale(1.05);
+  text-shadow: 0 4px 20px rgba(0, 255, 128, 0.2),
+    0 0 40px rgba(0, 255, 128, 0.5), 0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 ul.social-list.menu-social-list {
