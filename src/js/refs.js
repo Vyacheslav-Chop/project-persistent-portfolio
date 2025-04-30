@@ -10,4 +10,5 @@ export const refs = {
   projectsContainer: document.querySelector('.projects-list'),
   loadMoreBtn: document.querySelector('.projects-load-more'),
   notFound: document.querySelector('.not-found'),
+  closeCollectionBtn: document.querySelector('.project-close-collection'),
 };
