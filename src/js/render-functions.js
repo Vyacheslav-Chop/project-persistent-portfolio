@@ -12,7 +12,7 @@ const { modalAnswer } = refs;
 
 function createAnswer(title, message) {
   return `
-  <button class="work-modal-close-btn" type="button">
+  <button class="work-modal-close-btn" type="button" aria-label="Close modal">
       <svg class="work-modal-btn-close-icon" width="24" height="24">
         <use href="/img/sprite-svg/icons.svg#x"></use>
       </svg>
@@ -40,9 +40,8 @@ export async function renderAnswer(value) {
 
 // Розмітка reviews
 export function createMarkUpReviews(reviews) {
-  return reviews
-    .map(
-      ({ author, avatar_url, review }) => `
+  return reviews.map(
+    ({ author, avatar_url, review }) => `
       <li class="swiper-slide">
         <div class="review-card">
           <p class="text">"${review}"</p>
@@ -52,13 +51,13 @@ export function createMarkUpReviews(reviews) {
           </div>
         </div>
       </li>`
-    )
+  );
 }
 
 export function createProjectsMarkup(array) {
   return array
     .map(
-      ({ title, stack, img1x, img2x, link }) => `
+      ({ title, stack, img1x, img2x, link, visitIcon }) => `
       <li class="projects-item">
         <picture>
           <source media="(min-width: 1280px)" srcset="${img1x} 1x, ${img2x} 2x" />
@@ -69,9 +68,9 @@ export function createProjectsMarkup(array) {
         <p class="projects-stack">${stack}</p>
         <div class="projects-inner">
           <h3 class="projects-name">${title.toUpperCase()}</h3>
-          <a class="projects-link" href="${link}" target="_blank" rel="noopener noreferrer">
+          <a class="projects-link" href="${link}" target="_blank" aria-label="Visit the project website">
             VISIT
-            <img class="projects-icon" src="/img/sprite-svg/icon-projects.svg" alt="Arrow icon" width="18" height="18" />
+            <img class="project-link-icon" src="${visitIcon}" alt ="Visit Icon"/>
           </a>
         </div>
       </li>
@@ -91,7 +90,5 @@ export function renderProjects(element, array) {
 
   displayedProjectsCount += count;
 
-  
   checkEndOfCollection(displayedProjectsCount, array);
-
 }

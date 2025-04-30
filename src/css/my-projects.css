@@ -98,9 +98,9 @@ body.theme-dark .projects-link:focus {
   color: #14c57c;
 }
 
-.projects-icon {
-  width: 18px;
-  height: 18px;
+.project-link-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .projects-load-more {

@@ -31,6 +31,8 @@ import powerImg2x from '../img/projects/power-puls@2x.avif';
 import starlightImg1x from '../img/projects/starlight.avif';
 import starlightImg2x from '../img/projects/starlight@2x.avif';
 
+import iconLink from '../img/sprite-svg/visit-icon.svg';
+
 export const STORAGE_KEYS = {
   theme: 'theme',
   themeText: 'themeText',
@@ -49,6 +51,7 @@ export const projects = [
     img1x: walletImg1x,
     img2x: walletImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
   {
     title: 'Green Harvest Online Store',
@@ -56,6 +59,7 @@ export const projects = [
     img1x: greenImg1x,
     img2x: greenImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
   {
     title: 'English Excellence Website',
@@ -63,6 +67,7 @@ export const projects = [
     img1x: englishImg1x,
     img2x: englishImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
   {
     title: 'Fruitbox Online Store',
@@ -70,6 +75,7 @@ export const projects = [
     img1x: fruitBoxImg1x,
     img2x: fruitBoxImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
   {
     title: 'Vyshyvanka Vibes Landing Page',
@@ -77,6 +83,7 @@ export const projects = [
     img1x: vyshyvankaImg1x,
     img2x: vyshyvankaImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
   {
     title: 'Energy Flow Webservice',
@@ -84,6 +91,7 @@ export const projects = [
     img1x: energyImg1x,
     img2x: energyImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
   {
     title: 'Chego Jewelry Website',
@@ -91,6 +99,7 @@ export const projects = [
     img1x: chegoImg1x,
     img2x: chegoImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
   {
     title: 'Mimino Website',
@@ -98,6 +107,7 @@ export const projects = [
     img1x: miminoImg1x,
     img2x: miminoImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
   {
     title: 'Power Pulse',
@@ -105,6 +115,7 @@ export const projects = [
     img1x: powerImg1x,
     img2x: powerImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
   {
     title: 'Starlight Studio Landing Page',
@@ -112,6 +123,7 @@ export const projects = [
     img1x: starlightImg1x,
     img2x: starlightImg2x,
     link: 'https://vyacheslav-chop.github.io/project-persistent-portfolio/',
+    visitIcon: iconLink,
   },
 ];
 

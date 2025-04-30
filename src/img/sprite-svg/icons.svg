@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
-  <defs>
-  
+  <defs>  
     <symbol id="burger" viewBox="0 0 32 32">
       <path
         d="M5.334 23.027v-1.333h21.333v1.333H5.334zm0-6.36v-1.333h21.333v1.333H5.334zm0-6.36V8.974h21.333v1.333H5.334z" />
