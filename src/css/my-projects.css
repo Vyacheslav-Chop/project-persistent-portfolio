@@ -1,5 +1,11 @@
 /* базовые стили для мобильной версии */
 
+.container-projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .projects-title {
   font-family: var(--font-helpers);
   font-size: 52px;
@@ -111,13 +117,14 @@ body.theme-dark .projects-link:focus {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   line-height: 1.51;
-  margin: 0 auto;
   transition: all 0.3s ease;
 }
 
 .projects-load-more:hover,
 .projects-load-more:focus {
   transform: scale(1.05);
+  text-shadow: 0 4px 20px rgba(0, 255, 128, 0.2),
+    0 0 40px rgba(0, 255, 128, 0.5), 0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-light .projects-load-more {
