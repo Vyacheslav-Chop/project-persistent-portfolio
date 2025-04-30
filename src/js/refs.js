@@ -9,4 +9,5 @@ export const refs = {
   backDropModalAnswer: document.querySelector('.work-together-backdrop'),
   projectsContainer: document.querySelector('.projects-list'),
   loadMoreBtn: document.querySelector('.projects-load-more'),
+  notFound: document.querySelector('.not-found'),
 };
