@@ -10,7 +10,7 @@ import{i as O,a as R,A as U,S as D,N as Z,K as Q,M as Y}from"./assets/vendor-Qlv
         <div class="review-card">
           <p class="text">"${n}"</p>
           <div class="review-author">
-            <img src="${o}" alt="${t}'s avatar" class="avatar">
+            <img src="${o}" alt="${t}'s avatar" class="avatar" loading="lazy"/>
             <p class="author">${t}</p>
           </div>
         </div>
