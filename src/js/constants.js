@@ -87,22 +87,15 @@ export const options = {
   interactivity: {
     detect_on: 'window',
     events: {
-      onhover: {
+      onclick: {
         enable: true,
         mode: 'repulse',
       },
       modes: {
         repulse: {
-          distance: 10,
-          duration: 0.75,
+          distance: 250,
+          duration: 1.5,
         },
-        push: {
-          particles_nb: 6,
-        },
-      },
-      onclick: {
-        enable: true,
-        mode: 'push',
       },
       resize: true,
     },
@@ -192,4 +185,3 @@ export const projects = [
     visitIcon: iconLink,
   },
 ];
-
