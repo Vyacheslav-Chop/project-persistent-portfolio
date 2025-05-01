@@ -43,7 +43,7 @@ export function createMarkUpReviews(reviews) {
         <div class="review-card">
           <p class="text">"${review}"</p>
           <div class="review-author">
-            <img src="${avatar_url}" alt="${author}'s avatar" class="avatar">
+            <img src="${avatar_url}" alt="${author}'s avatar" class="avatar" loading="lazy"/>
             <p class="author">${author}</p>
           </div>
         </div>
