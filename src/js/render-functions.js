@@ -2,6 +2,7 @@ import { sendFormData } from './api';
 import { clearContent, showErrorMessage } from './helpers';
 import { refs } from './refs';
 import { appendProjects, checkEndOfCollection, hideBtn } from './helpers';
+// import iconCloseAnswer from '../img/sprite-svg/close-answer.svg';
 
 let displayedProjectsCount = 0;
 const count = 3;
@@ -12,22 +13,17 @@ const { modalAnswer, closeCollectionBtn } = refs;
 
 function createAnswer(title, message) {
   return `
-  <button class="work-modal-close-btn" type="button" aria-label="Close modal">
-      <svg class="work-modal-btn-close-icon" width="24" height="24">
-        <use href="/img/sprite-svg/icons.svg#x"></use>
-      </svg>
-    </button>
-<h3 class="work-modal-title text-accent">
+    <h3 class="work-modal-title text-accent">
       ${title}
     </h3>
     <p class="work-modal-text">
       ${message}
     </p>
-`;
+`
+;
 }
 
 export async function renderAnswer(value) {
-  clearContent(modalAnswer);
   if (!value) return;
   try {
     const { title, message } = await sendFormData(value);

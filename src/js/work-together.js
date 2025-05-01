@@ -19,3 +19,4 @@ if (localStorage.getItem(formData)) {
 
 form.addEventListener('input', handleInput);
 form.addEventListener('submit', handleSubmit);
+

@@ -5,7 +5,7 @@ export const refs = {
   openModalMenuBtn: document.querySelector('.burger-menu-btn'),
   modalMenu: document.querySelector('.menu'),
   form: document.querySelector('.work-together-form'),
-  modalAnswer: document.querySelector('.work-together-modal'),
+  modalAnswer: document.querySelector('.work-modal-iner'),
   backDropModalAnswer: document.querySelector('.work-together-backdrop'),
   projectsContainer: document.querySelector('.projects-list'),
   loadMoreBtn: document.querySelector('.projects-load-more'),
