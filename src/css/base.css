@@ -21,7 +21,6 @@ body {
   min-height: 100vh;
   margin: 0;
   transition: all 0.3s ease;
-  position: relative;
 }
 
 body.theme-light {
@@ -137,7 +136,7 @@ body.theme-light.text-theme-purple .go-top:hover {
 }
 
 #tsparticles {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

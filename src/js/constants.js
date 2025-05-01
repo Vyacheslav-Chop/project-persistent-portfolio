@@ -93,7 +93,7 @@ export const options = {
       },
       modes: {
         repulse: {
-          distance: 50,
+          distance: 10,
           duration: 0.75,
         },
         push: {
