@@ -44,6 +44,72 @@ export let requestData = {
   comment: '',
 };
 
+export const options = {
+  particles: {
+    number: {
+      value: 50,
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+    },
+    color: {
+      value: 'random',
+    },
+    shape: {
+      type: ['polygon', 'star', 'triangle'],
+      stroke: {
+        width: 2,
+        color: '#00ff80',
+      },
+    },
+    opacity: {
+      value: 0.2,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 1,
+      },
+    },
+    size: {
+      value: 2,
+    },
+    line_linked: {
+      enable: true,
+      distance: 160,
+      color: '#00ff80',
+      opacity: 0.6,
+    },
+    move: {
+      enable: true,
+    },
+  },
+  interactivity: {
+    detect_on: 'window',
+    events: {
+      onhover: {
+        enable: true,
+        mode: 'repulse',
+      },
+      modes: {
+        repulse: {
+          distance: 50,
+          duration: 0.75,
+        },
+        push: {
+          particles_nb: 6,
+        },
+      },
+      onclick: {
+        enable: true,
+        mode: 'push',
+      },
+      resize: true,
+    },
+  },
+  retina_detect: true,
+};
+
 export const projects = [
   {
     title: 'Wallet Webservice',

@@ -120,7 +120,6 @@ export function checkEndOfCollection(counter, array) {
   if (counter >= array.length) {
     showInfoMessage('There are no more projets to load at the moment.');
     hideBtn(loadMoreBtn);
-    
   } else {
     showBtn(loadMoreBtn);
   }

@@ -1,9 +1,9 @@
 import './js/header';
-import './js/tech-skills';
 import './js/my-projects';
 import './js/faq';
 import './js/reviews';
 import './js/work-together';
+import { options } from './js/constants';
 
 // scroll to the top
 const goTopBtn = document.querySelector('.go-top');
@@ -27,3 +27,5 @@ function goTop() {
     setTimeout(goTop, 0);
   }
 }
+
+particlesJS('tsparticles', options);
