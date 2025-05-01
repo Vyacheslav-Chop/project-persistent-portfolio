@@ -23,6 +23,7 @@ export function openFormModal() {
   backDropModalAnswer.classList.remove('is-close');
   backDropModalAnswer.classList.add('is-open');
   body.style.overflow = 'hidden';
+  document.body.classList.add('page-inactive');
   backDropModalAnswer.addEventListener('click', handleClick);
   window.addEventListener('keydown', handleKeyDown);
 }
@@ -30,6 +31,7 @@ export function closeFormModal() {
   backDropModalAnswer.classList.remove('is-open');
   backDropModalAnswer.classList.add('is-close');
   body.style.overflow = '';
+  document.body.classList.remove('page-inactive');
   backDropModalAnswer.removeEventListener('click', handleClick);
   window.removeEventListener('keydown', handleKeyDown);
 }

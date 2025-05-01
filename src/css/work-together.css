@@ -610,7 +610,8 @@ body.theme-light .work-modal-close-btn {
 .work-modal-close-btn:hover,
 .work-modal-close-btn:focus {
   background-color: #3b3f45;
-  box-shadow: inset 0 0 100px rgba(0, 255, 128, 0.22), 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+  box-shadow: inset 0 0 100px rgba(0, 255, 128, 0.22),
+    0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
     0 0 80px rgba(0, 255, 128, 0.4);
 }
 
@@ -621,42 +622,48 @@ body.theme-dark .work-modal-close-img {
 body.theme-light.text-theme-red .work-modal-close-btn:hover,
 body.theme-light.text-theme-red .work-modal-close-btn:focus {
   stroke: #58118d;
-  box-shadow: inset 0 0 100px rgba(170, 0, 255, 0.22), 0 4px 20px rgba(170, 0, 255, 0.2), 0 0 40px rgba(170, 0, 255, 0.5),
+  box-shadow: inset 0 0 100px rgba(170, 0, 255, 0.22),
+    0 4px 20px rgba(170, 0, 255, 0.2), 0 0 40px rgba(170, 0, 255, 0.5),
     0 0 80px rgba(170, 0, 255, 0.4);
 }
 
 body.theme-light.text-theme-blue .work-modal-close-btn:hover,
 body.theme-light.text-theme-blue .work-modal-close-btn:focus {
   stroke: #c45500;
-  box-shadow: inset 0 0 100px rgba(255, 110, 0, 0.22), 0 4px 20px rgba(255, 110, 0, 0.2), 0 0 40px rgba(255, 110, 0, 0.5),
+  box-shadow: inset 0 0 100px rgba(255, 110, 0, 0.22),
+    0 4px 20px rgba(255, 110, 0, 0.2), 0 0 40px rgba(255, 110, 0, 0.5),
     0 0 80px rgba(255, 110, 0, 0.4);
 }
 
 body.theme-light.text-theme-purple .work-modal-close-btn:hover,
 body.theme-light.text-theme-purple .work-modal-close-btn:focus {
   stroke: #afb833;
-  box-shadow: inset 0 0 100px rgba(210, 255, 0, 0.22), 0 4px 20px rgba(210, 255, 0, 0.2), 0 0 40px rgba(210, 255, 0, 0.5),
+  box-shadow: inset 0 0 100px rgba(210, 255, 0, 0.22),
+    0 4px 20px rgba(210, 255, 0, 0.2), 0 0 40px rgba(210, 255, 0, 0.5),
     0 0 80px rgba(210, 255, 0, 0.4);
 }
 
 body.theme-dark.text-theme-red .work-modal-close-btn:hover,
 body.theme-dark.text-theme-red .work-modal-close-btnv:focus {
   stroke: #58118d;
-  box-shadow: inset 0 0 100px rgba(170, 0, 255, 0.22), 0 4px 20px rgba(170, 0, 255, 0.2), 0 0 40px rgba(170, 0, 255, 0.5),
+  box-shadow: inset 0 0 100px rgba(170, 0, 255, 0.22),
+    0 4px 20px rgba(170, 0, 255, 0.2), 0 0 40px rgba(170, 0, 255, 0.5),
     0 0 80px rgba(170, 0, 255, 0.4);
 }
 
 body.theme-dark.text-theme-blue .work-modal-close-btn:hover,
 body.theme-dark.text-theme-blue .work-modal-close-btn:focus {
   stroke: #c45500;
-  box-shadow: inset 0 0 100px rgba(255, 110, 0, 0.22), 0 4px 20px rgba(255, 110, 0, 0.2), 0 0 40px rgba(255, 110, 0, 0.5),
+  box-shadow: inset 0 0 100px rgba(255, 110, 0, 0.22),
+    0 4px 20px rgba(255, 110, 0, 0.2), 0 0 40px rgba(255, 110, 0, 0.5),
     0 0 80px rgba(255, 110, 0, 0.4);
 }
 
 body.theme-dark.text-theme-purple .work-modal-close-btn:hover,
 body.theme-dark.text-theme-purple .work-modal-close-btn:focus {
   stroke: #afb833;
-  box-shadow: inset 0 0 100px rgba(210, 255, 0, 0.22), 0 4px 20px rgba(210, 255, 0, 0.2), 0 0 40px rgba(210, 255, 0, 0.5),
+  box-shadow: inset 0 0 100px rgba(210, 255, 0, 0.22),
+    0 4px 20px rgba(210, 255, 0, 0.2), 0 0 40px rgba(210, 255, 0, 0.5),
     0 0 80px rgba(210, 255, 0, 0.4);
 }
 
@@ -691,14 +698,16 @@ body.theme-dark.text-theme-purple .work-modal-close-img {
 body.theme-light .work-modal-close-btn:hover,
 body.theme-light .work-modal-close-btn:focus {
   transform: scale(1.05);
-  box-shadow: inset 0 0 100px rgba(0, 255, 128, 0.22), 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+  box-shadow: inset 0 0 100px rgba(0, 255, 128, 0.22),
+    0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
     0 0 80px rgba(0, 255, 128, 0.4);
 }
 
 body.theme-dark .work-modal-close-btn:hover,
 body.theme-dark .work-modal-close-btn:focus {
   transform: scale(1.05);
-  box-shadow: inset 0 0 100px rgba(0, 255, 128, 0.1), 0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
+  box-shadow: inset 0 0 100px rgba(0, 255, 128, 0.1),
+    0 4px 20px rgba(0, 255, 128, 0.2), 0 0 40px rgba(0, 255, 128, 0.5),
     0 0 80px rgba(0, 255, 128, 0.4);
 }
 
@@ -722,4 +731,7 @@ body.theme-dark .work-modal-close-btn:focus {
     height: 280px;
     padding: 64px;
   }
+}
+.page-inactive :not(.work-together-backdrop):not(.work-together-backdrop *) {
+  pointer-events: none;
 }

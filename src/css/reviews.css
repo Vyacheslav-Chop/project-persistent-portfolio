@@ -188,9 +188,7 @@ body.theme-dark .review-card {
 }
 
 .swiper-button-prev:hover,
-.swiper-button-prev:focus,
-.swiper-button-next:hover,
-.swiper-button-next:focus {
+.swiper-button-next:hover {
   border: 1px solid #292929;
   background-color: #e4e5e6;
   transform: scale(1.05);
