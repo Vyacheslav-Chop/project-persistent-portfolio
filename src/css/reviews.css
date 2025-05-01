@@ -56,8 +56,11 @@ body.theme-dark.text-theme-purple .not-found {
 
 .reviews-swiper {
   display: block;
+  padding: 10px 10px;
 }
-
+.swiper.reviews-swiper {
+  padding: 10px 10px;
+}
 .swiper-wrapper {
   display: flex;
   margin-bottom: 24px;

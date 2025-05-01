@@ -29,6 +29,8 @@ async function initReviews() {
       enabled: reviews.length > 1,
       slidesPerView: 1,
       spaceBetween: 20,
+
+      centeredSlidesBounds: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -40,9 +42,11 @@ async function initReviews() {
       mousewheel: {
         forceToAxis: true,
       },
+
       breakpoints: {
         1280: {
           slidesPerView: 2,
+          slidesPerGroup: 2,
         },
       },
       on: {
