@@ -48,6 +48,8 @@ export function handleKeyDown(ev) {
   }
 }
 
+// закриття модального вікна при натискані на посилання
+
 export function handleModalClick(ev) {
   const closeMenuBtn = ev.target.closest('.menu-close-btn');
   const navLink = ev.target.closest('.menu-nav-link');
@@ -72,6 +74,8 @@ export function handleModalClick(ev) {
   scrollToView();
 }
 
+
+// відкриття модального вікна
 export function handleOpenMenu() {
   if (openModalMenuBtn) {
     openModalMenu();
@@ -79,6 +83,8 @@ export function handleOpenMenu() {
   }
 }
 
+
+// перемикання тем для тексту
 export function handleChangeThemeText(ev) {
   const clickedBtn = ev.target.closest('button[data-theme]');
   if (!clickedBtn) return;
@@ -99,6 +105,8 @@ export function handleChangeThemeText(ev) {
   removeFocus();
 }
 
+// відслідкування кожного символу в формі для валіідації та занесення до локального сховища
+
 export function handleInput(ev) {
   if (ev.target.name === 'user-email') {
     requestData.email = form.elements['user-email'].value.trim();
@@ -108,6 +116,8 @@ export function handleInput(ev) {
   isValidEmail(requestData.email);
   localStorage.setItem(formData, JSON.stringify(requestData));
 }
+
+// відправлення форми та запуск модального вікна з відповідю
 
 export function handleSubmit(ev) {
   ev.preventDefault();
@@ -133,6 +143,8 @@ export function handleSubmit(ev) {
   isValidEmail();
 }
 
+// закриття модального вікна для форми
+
 export function handleClick(ev) {
   const closeAnswerModalBtn = ev.target.closest('.work-modal-close-btn');
   if (ev.target === ev.currentTarget) {
@@ -144,6 +156,8 @@ export function handleClick(ev) {
   removeFocus();
 }
 
+// дозавантаження проектів на сторінку
+
 export function handleLoadMore() {
   renderProjects(projectsContainer, projects);
   const galleryItem = document.querySelector('.projects-item');
@@ -154,6 +168,8 @@ export function handleLoadMore() {
   removeFocus();
   showBtn(closeCollectionBtn);
 }
+
+// закриття колекції проектів та скрол до першого проекту
 
 export function handleCloseCollection() {
   clearContent(projectsContainer);

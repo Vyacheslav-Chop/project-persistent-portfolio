@@ -5,7 +5,7 @@ import './js/reviews';
 import './js/work-together';
 import { options } from './js/constants';
 
-// scroll to the top
+// скролл до хедера
 const goTopBtn = document.querySelector('.go-top');
 
 goTopBtn.addEventListener('click', goTop);
@@ -28,4 +28,5 @@ function goTop() {
   }
 }
 
+// бібліотека для анімації
 particlesJS('tsparticles', options);

@@ -204,8 +204,6 @@ body.theme-dark .swiper-button-next:hover {
   border: 1px solid #2a2d32;
   background-color: #2a2d32;
 }
-/* заблокована кнопка
- */
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {

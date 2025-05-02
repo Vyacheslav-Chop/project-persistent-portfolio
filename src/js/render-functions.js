@@ -1,8 +1,7 @@
 import { sendFormData } from './api';
-import { clearContent, showErrorMessage } from './helpers';
+import { showErrorMessage } from './helpers';
 import { refs } from './refs';
 import { appendProjects, checkEndOfCollection, hideBtn } from './helpers';
-// import iconCloseAnswer from '../img/sprite-svg/close-answer.svg';
 
 let displayedProjectsCount = 0;
 const count = 3;
@@ -11,6 +10,8 @@ const { modalAnswer, closeCollectionBtn } = refs;
 
 //Функцію для створення, рендеру або видалення розмітки
 
+
+// розмітка відповіді з бекенду
 function createAnswer(title, message) {
   return `
     <h3 class="work-modal-title text-accent">
@@ -19,10 +20,11 @@ function createAnswer(title, message) {
     <p class="work-modal-text">
       ${message}
     </p>
-`
-;
+`;
 }
 
+
+// відмалювання відповіді з бекенду
 export async function renderAnswer(value) {
   if (!value) return;
   try {
@@ -52,6 +54,7 @@ export function createMarkUpReviews(reviews) {
     .join('');
 }
 
+// розмітка проекту
 export function createProjectsMarkup(array) {
   return array
     .map(
@@ -77,6 +80,8 @@ export function createProjectsMarkup(array) {
     .join('');
 }
 
+
+// відмалювання проектів на сторінці
 export function renderProjects(element, array) {
   hideBtn(closeCollectionBtn);
   const projectsToShow = array.slice(
@@ -92,7 +97,9 @@ export function renderProjects(element, array) {
   checkEndOfCollection(displayedProjectsCount, array);
 }
 
+// видалення всіх проектів та відмалювання лише 3-х перших
 export function resetProjects(element, array) {
+  // оновлюємо лічильник
   displayedProjectsCount = 0;
   renderProjects(element, array);
 }

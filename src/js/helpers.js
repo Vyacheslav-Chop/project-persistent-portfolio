@@ -4,17 +4,22 @@ import 'izitoast/dist/css/iziToast.min.css';
 import { refs } from './refs';
 
 const { form, loadMoreBtn } = refs;
+
+// функція для слухача зняття фокусу
 function removeFocusFromElements() {
   const interactiveElements = document.querySelectorAll('a, button');
   interactiveElements.forEach(interactiveElement => interactiveElement.blur());
 }
 
+// зняття фокусу з елементів
 export function removeFocus() {
   const interactiveElements = document.querySelectorAll('a, button');
   interactiveElements.forEach(interactiveElement =>
     interactiveElement.addEventListener('click', removeFocusFromElements)
   );
 }
+
+// плавний скролл для посилань навігації
 
 function smoothScroll(ev) {
   ev.preventDefault();
@@ -26,12 +31,15 @@ function smoothScroll(ev) {
   ev.currentTarget.blur();
 }
 
+// плавний скролл до секцій
+
 export function scrollToView() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', smoothScroll);
   });
 }
 
+// повідомлення про помилку
 export function showErrorMessage(message) {
   iziToast.error({
     message,
@@ -42,6 +50,8 @@ export function showErrorMessage(message) {
   });
 }
 
+
+// інформаційне повідомлення
 export function showInfoMessage(message) {
   iziToast.info({
     message,
@@ -51,10 +61,13 @@ export function showInfoMessage(message) {
   });
 }
 
+
+// очищення контенту
 export function clearContent(container) {
   container.innerHTML = '';
 }
 
+// валідатор для інпуту пошти
 export function isValidEmail(emailValue) {
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const emailInput = document.querySelector('#user-email');
@@ -94,18 +107,24 @@ export function isValidEmail(emailValue) {
 
   return isValid;
 }
+
+// кнопку видно
 export function showBtn(btn) {
   btn.hidden = false;
 }
 
+
+// кнопку не видно
 export function hideBtn(btn) {
   btn.hidden = true;
 }
 
+// відмалювання контенту шляхом додавання елементів
 export function appendProjects(element, array) {
   element.insertAdjacentHTML('beforeend', array);
 }
 
+// плавний скролл для підвантаження проектів
 export function smoothScrollItems(galleryItem) {
   const rect = galleryItem.getBoundingClientRect();
   const heightItem = rect.height;
@@ -116,6 +135,8 @@ export function smoothScrollItems(galleryItem) {
   });
 }
 
+
+// перевірка на залишок колекції проектів
 export function checkEndOfCollection(counter, array) {
   if (counter >= array.length) {
     showInfoMessage('There are no more projets to load at the moment.');
@@ -125,6 +146,8 @@ export function checkEndOfCollection(counter, array) {
   }
 }
 
+
+// скролл до першого проекту
 export function scrollToFirstProject() {
   const firstProject = document.querySelector('.projects-item');
   if (firstProject) {

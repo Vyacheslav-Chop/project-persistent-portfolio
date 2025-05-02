@@ -1,7 +1,3 @@
-/* Work-togethet-section */
-
-/* Styles for mobile */
-
 .work-together-title {
   font-family: var(--font-helpers);
   font-size: 52px;
@@ -430,8 +426,6 @@ body.theme-dark.text-theme-purple .work-send-btn:focus {
     0 0 80px rgba(210, 255, 0, 0.4);
 }
 
-/* Styles for tablet */
-
 @media screen and (min-width: 768px) {
   .work-together-title {
     font-size: 108px;
@@ -474,8 +468,6 @@ body.theme-dark.text-theme-purple .work-send-btn:focus {
   }
 }
 
-/* Styles for desktop */
-
 @media screen and (min-width: 1280px) {
   .work-together-title {
     margin-bottom: 80px;
@@ -514,8 +506,6 @@ body.theme-dark.text-theme-purple .work-send-btn:focus {
     background-image: url('/img/work-together/bg-imgs/decor-bg-4-desktop@2x.webp');
   }
 }
-
-/* Styles for Modal */
 
 .work-together-backdrop {
   position: fixed;

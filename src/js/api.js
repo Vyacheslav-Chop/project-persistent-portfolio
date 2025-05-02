@@ -9,6 +9,8 @@ export async function sendFormData(value) {
   return data;
 }
 
+// запит на відгуки
+
 export async function fetchReviews() {
   try {
     const { data } = await axios.get(

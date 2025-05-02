@@ -3,6 +3,8 @@ import { handleClick, handleKeyDown, handleModalClick } from './handlers';
 import { refs } from './refs';
 const { modalMenu, body, backDropModalAnswer } = refs;
 
+
+// відкриття модального вікна для меню навігації
 export function openModalMenu() {
   modalMenu.classList.remove('is-close');
   modalMenu.classList.add('is-open');
@@ -11,6 +13,8 @@ export function openModalMenu() {
   window.addEventListener('keydown', handleKeyDown);
 }
 
+
+// заккриття модального вікна для меню навігації
 export function closeModalMenu() {
   modalMenu.classList.remove('is-open');
   modalMenu.classList.add('is-close');
@@ -19,6 +23,8 @@ export function closeModalMenu() {
   window.removeEventListener('keydown', handleKeyDown);
 }
 
+
+// відкриття модального вікна для відповіді з бекенду
 export function openFormModal() {
   backDropModalAnswer.classList.remove('is-close');
   backDropModalAnswer.classList.add('is-open');
@@ -27,6 +33,8 @@ export function openFormModal() {
   backDropModalAnswer.addEventListener('click', handleClick);
   window.addEventListener('keydown', handleKeyDown);
 }
+
+// заккриття модального вікна для відповіді з бекенду
 export function closeFormModal() {
   backDropModalAnswer.classList.remove('is-open');
   backDropModalAnswer.classList.add('is-close');

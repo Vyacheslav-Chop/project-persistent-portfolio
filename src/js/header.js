@@ -5,6 +5,7 @@ const { openModalMenuBtn } = refs;
 import { handleOpenMenu, handleChangeThemeText } from './handlers';
 import { scrollToView, removeFocus } from './helpers';
 
+// робота перемикача тем
 document.addEventListener('DOMContentLoaded', () => {
   const switchers = document.querySelectorAll('.theme-switcher');
   switchers.forEach(switcher => {

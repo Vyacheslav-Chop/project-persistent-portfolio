@@ -33,17 +33,23 @@ import starlightImg2x from '../img/projects/starlight@2x.avif';
 
 import iconLink from '../img/sprite-svg/visit-icon.svg';
 
+
+// ключі для локального сховища
 export const STORAGE_KEYS = {
   theme: 'theme',
   themeText: 'themeText',
   formData: 'formData',
 };
 
+// об'єкт для отримання даних з форми
+
 export let requestData = {
   email: '',
   comment: '',
 };
 
+
+// об'єкт налаштувань для анімації
 export const options = {
   particles: {
     number: {
@@ -103,6 +109,8 @@ export const options = {
   retina_detect: true,
 };
 
+
+// об'єкт для збережень проектів
 export const projects = [
   {
     title: 'Wallet Webservice',

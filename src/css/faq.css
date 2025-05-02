@@ -1,5 +1,3 @@
-/* Мобільні стилі */
-
 .faq-background {
   display: none;
 }
@@ -155,7 +153,6 @@ body.theme-dark .faq-answer {
   background-color: #204136;
 }
 
-/* tablet */
 @media screen and (min-width: 768px) {
   .faq-title {
     font-size: 108px;
@@ -169,7 +166,6 @@ body.theme-dark .faq-answer {
   }
 }
 
-/* desktop */
 @media screen and (min-width: 1280px) {
   .faq-container {
     position: relative;
@@ -188,7 +184,7 @@ body.theme-dark .faq-answer {
     right: 32px;
     max-width: 592px;
   }
-  /* Фонове зображення */
+
   .faq-background {
     display: flex;
     background-image: url('/img/faq/decor-green-desktop.webp');
